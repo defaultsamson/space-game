@@ -1,0 +1,46 @@
+<!<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<title>Space Game</title>
+
+<head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: black
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <script src="scripts/phaser.min.js"></script>
+
+    <script src="scripts/Boot.js"></script>
+
+    <script src="scripts/Preloader.js"></script>
+
+    <script src="scripts/MainMenu.js"></script>
+
+    <script src="scripts/Level1.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var game = new Phaser.Game(16*54, 9*54, Phaser.AUTO, '');
+
+            game.state.add('Boot', Game.Boot);
+            game.state.add('Preloader', Game.Preloader);
+            game.state.add('MainMenu', Game.MainMenu);
+            game.state.add('Level1', Game.Level1);
+
+            game.state.start('Boot');
+
+        }
+
+    </script>
+</body>
+
+
+</html>
