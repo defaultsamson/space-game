@@ -86,15 +86,6 @@ Game.Level1.prototype = {
             jumpCount = 2;
         }
 
-        if ((controls.up.downDuration() || controls.up_1.downDuration() || controls.up_2.downDuration()) && this.game.time.now > jumpTimer) {
-            if (jumpCount > 0) {
-                player.animations.play('jump');
-                player.body.velocity.y = -playerJumpSpeed;
-                jumpTimer = this.game.time.now + jumpDelayInterval;
-                jumpCount -= 1;
-            }
-        }
-
         if (controls.right.isDown || controls.right_1.isDown) {
             if (onFloor) player.animations.play('run');
             player.scale.setTo(1, 1);
@@ -123,6 +114,15 @@ Game.Level1.prototype = {
 
             // Rounds the player's position upon halting to prevent anti-aliasing when not moving
             player.body.position.x = Math.round(player.body.position.x)
+        }
+
+        if ((controls.up.downDuration() || controls.up_1.downDuration() || controls.up_2.downDuration()) && this.game.time.now > jumpTimer) {
+            if (jumpCount > 0) {
+                player.animations.play('jump');
+                player.body.velocity.y = -playerJumpSpeed;
+                jumpTimer = this.game.time.now + jumpDelayInterval;
+                jumpCount -= 1;
+            }
         }
 
         /*
