@@ -45,13 +45,29 @@ Game.Level1.prototype = {
 
         controls = {
             right: this.game.input.keyboard.addKey(Phaser.Keyboard.D),
+            right_1: this.game.input.keyboard.addKey(Phaser.Keyboard.RIGHT),
             left: this.game.input.keyboard.addKey(Phaser.Keyboard.A),
+            left_1: this.game.input.keyboard.addKey(Phaser.Keyboard.LEFT),
             up: this.game.input.keyboard.addKey(Phaser.Keyboard.W),
+            up_1: this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR),
+            up_2: this.game.input.keyboard.addKey(Phaser.Keyboard.UP),
             down: this.game.input.keyboard.addKey(Phaser.Keyboard.S),
+            down_1: this.game.input.keyboard.addKey(Phaser.Keyboard.DOWN),
         };
+
+        // Allows players to vary their jump height
+        controls.up.onUp.add(halfPlayerY);
+        controls.up_1.onUp.add(halfPlayerY);
+        controls.up_2.onUp.add(halfPlayerY);
         //cursors = this.input.keyboard.createCursorKeys();
         //this.camera.scale.x = 2
         //this.camera.scale.y = 4
+
+        function halfPlayerY() {
+            if (player.body.velocity.y < 0) {
+                player.body.velocity.y *= 0.5;
+            }
+        }
     },
 
     resize: function () {
@@ -65,12 +81,12 @@ Game.Level1.prototype = {
         player.body.velocity.x = 0;
 
         var onFloor = player.body.onFloor() || player.body.touching.down
-        
-        if (onFloor){
+
+        if (onFloor) {
             jumpCount = 2;
         }
-        
-        if (controls.up.downDuration() && this.game.time.now > jumpTimer) {
+
+        if ((controls.up.downDuration() || controls.up_1.downDuration() || controls.up_2.downDuration()) && this.game.time.now > jumpTimer) {
             if (jumpCount > 0) {
                 player.animations.play('jump');
                 player.body.velocity.y = -playerJumpSpeed;
@@ -79,25 +95,32 @@ Game.Level1.prototype = {
             }
         }
 
-        if (controls.right.isDown) {
+        if (controls.right.isDown || controls.right_1.isDown) {
             if (onFloor) player.animations.play('run');
             player.scale.setTo(1, 1);
             player.body.velocity.x += playerSpeed;
         }
 
-        if (controls.left.isDown) {
+        if (controls.left.isDown || controls.left_1.isDown) {
             if (onFloor) player.animations.play('run');
             player.scale.setTo(-1, 1);
             player.body.velocity.x -= playerSpeed;
         }
 
-        if (controls.down.downDuration()) {
+        if (controls.down.downDuration() || controls.down_1.downDuration()) {
             showDebug = !showDebug;
+
+            if (showDebug) {
+                layer.debug = true;
+            } else {
+                layer.debug = false;
+                this.game.debug.reset();
+            }
         }
 
         if (player.body.velocity.x == 0 && player.body.velocity.y == 0) {
             player.animations.play('idle');
-            
+
             // Rounds the player's position upon halting to prevent anti-aliasing when not moving
             player.body.position.x = Math.round(player.body.position.x)
         }
@@ -122,11 +145,7 @@ Game.Level1.prototype = {
 
     render: function () {
         if (showDebug) {
-           this.game.debug.body(player);
-            layer.debug = true;
-        }
-        else{
-            layer.debug = false;
+            this.game.debug.body(player);
         }
     }
 };
