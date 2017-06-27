@@ -1,8 +1,7 @@
 var Game = {};
 
 Game.Boot = function (game) {
-    "use strict";
-
+    
 };
 
 Game.Boot.prototype = {
@@ -12,11 +11,6 @@ Game.Boot.prototype = {
         this.input.maxPointers = 1;
 
         this.stage.disableVisibilityChange = true;
-
-        //this.scale.scaleMode = Phaser.ScaleManager.RESIZE;
-        //this.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
-        //this.scale.parentIsWindow = true;
-
     },
 
     preload: function () {
@@ -28,6 +22,8 @@ Game.Boot.prototype = {
         this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
+        
+        //this.scale.setGameSize(200, 400);
 
         if (this.game.device.desktop) {} else {
             this.scale.forceOrientation(true, false);

@@ -8,15 +8,29 @@
         body {
             padding: 0;
             margin: 0;
-            background-color: black
+            overflow-y: hidden;
+            overflow-x: hidden;
+            background-color: black;
+            /* Older versions of FF          */
+            image-rendering: optimizeSpeed;
+            /* FF 6.0+                       */
+            image-rendering: -moz-crisp-edges;
+            /* Safari                        */
+            image-rendering: -webkit-optimize-contrast;
+            /* OS X & Windows Opera (12.02+) */
+            image-rendering: -o-crisp-edges;
+            /* Awesome future-browsers       */
+            image-rendering: pixelated;
+            /* IE                            */
+            -ms-interpolation-mode: nearest-neighbor;
         }
-
     </style>
 </head>
 
 
 <body>
-    <script src="scripts/phaser.min.js"></script>
+
+    <script src="scripts/phaser.js"></script>
 
     <script src="scripts/Boot.js"></script>
 
@@ -28,8 +42,8 @@
 
     <script type="text/javascript">
         window.onload = function() {
-            var game = new Phaser.Game(16*54, 9*54, Phaser.AUTO, '');
-
+            var game = new Phaser.Game(16 * 18, 9 * 18, Phaser.AUTO, '');
+            
             game.state.add('Boot', Game.Boot);
             game.state.add('Preloader', Game.Preloader);
             game.state.add('MainMenu', Game.MainMenu);
@@ -38,7 +52,6 @@
             game.state.start('Boot');
 
         }
-
     </script>
 </body>
 

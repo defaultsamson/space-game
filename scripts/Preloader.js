@@ -1,7 +1,6 @@
 Game.Preloader = function (game) {
 
     this.preloadBar = null;
-
 };
 
 Game.Preloader.prototype = {
@@ -17,8 +16,13 @@ Game.Preloader.prototype = {
 
         // LOAD ALL ASSETS
 
-        this.load.tilemap('map', 'assets/level1.csv')
-        this.load.image('tileset', 'assets/spritesheet.png')
+        var tilemap = this.load.tilemap('map', 'assets/level1.csv');
+        
+        this.load.image('tileset', 'assets/spritesheet.png');
+        
+        this.load.spritesheet('player', 'assets/running.png', 36, 40)
+        
+        //tilemap.smoothed = false;
     },
 
     create: function () {

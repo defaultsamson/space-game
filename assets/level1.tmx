@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="450">
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="450" columns="25">
   <image source="spritesheet.png" width="400" height="300"/>
  </tileset>
  <layer name="Tile Layer 1" width="20" height="10">
   <data encoding="base64" compression="zlib">
-   eJz7y8DA8JfKGBk0YcEwYAzEm6B4M5Q+jYSxmQczswHNLBAwQTIP3Sx85oFAIxYxUyDeiMMsQuY14DAP3awzRJiXDcT1SHxWKG2Gw12ngPgsHvNaoO5TBGJmKE7Hg89iMU8eiNmR9MOwFBDLAnEm1L9n8WCYec1o+kFYBsksmHmg9JLESNg8amIAdMdsWQ==
+   eJyt0tkJgDAMgOGKiDuIIs7gMZAvIg7huZC6hdqRBFNIIJQeLwY+AoX+VPAVQrw/47MY0JTgQCfumzH1qDlpLTUV6+ktV0/NbDirwW5p+XqTpae3Hk9vwD2yswh3Y3nXBaSlt7H3FSBEnYM09HIQs/skARno8XulA/VW7b6Sshb11P/SBv7enz54g2xZ
   </data>
  </layer>
 </map>
