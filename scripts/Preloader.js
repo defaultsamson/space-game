@@ -31,6 +31,8 @@ Game.Preloader.prototype = {
         this.load.image('stars3ls', 'assets/ambient/stars3lightspeed.png');
         this.load.image('gradient', 'assets/ambient/gradient.png');
         this.load.image('glow', 'assets/ambient/lightspeedGlow.png');
+        
+        this.load.image('sand', 'assets/planets/sand.png');
 
 
         //tilemap.smoothed = false;
