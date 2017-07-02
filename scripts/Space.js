@@ -102,7 +102,7 @@ Game.Space.prototype = {
             lastY = this.game.camera.position.y;
 
             // If going over light speed
-            if (player.body.speed >= lsFullSpeed) {
+            if (player.body.speed > lsFullSpeed) {
                 // Hide regular stars and show light speed stars
                 stars1.alpha = 0;
                 stars2.alpha = 0;
