@@ -3,20 +3,30 @@ Game.Space = function (game) {
 };
 
 const SCALE = 4;
+const WINDOW_WIDTH = 1280;
+const WINDOW_HEIGHT = 720;
 
 //var cursors;
 
 var player;
 var fire;
 var controls = {};
-var thrustersMagnitude = 8;
-var angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnitude / 2);
+const thrustersMagnitude = 8;
+const angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnitude / 2);
+const maxSpeed = 5000;
 
 var stars1;
 var stars2;
 var stars3;
 var lastX;
 var lastY;
+var stars2ls; // ls = lightspeed
+var stars3ls;
+// The biggest width it will need is the worst case scenario (where the LS effect is rotated such that the width needs to cover the diagonal length accross the screen)
+const maxRequiredLSWidth = Math.ceil(Math.sqrt(WINDOW_WIDTH * WINDOW_WIDTH + WINDOW_HEIGHT * WINDOW_HEIGHT));
+
+const lsStartSpeed = 2500;
+const lsFullSpeed = 2800;
 
 var showDebug = false;
 
@@ -30,19 +40,29 @@ Game.Space.prototype = {
         this.game.stage.backgroundColor = '#211a23';
         this.game.renderer.renderSession.roundPixels = true
 
-        stars1 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars1');
-        stars2 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars2');
-        stars3 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars3');
+        stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars1');
+        stars1.fixedToCamera = true;
+        stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars2');
+        stars2.fixedToCamera = true;
+        stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars3');
+        stars3.fixedToCamera = true;
+        stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars2ls');
+        stars2ls.anchor.setTo(0.5, 0.5);
+        stars2ls.fixedToCamera = true;
+        stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars3ls');
+        stars3ls.anchor.setTo(0.5, 0.5);
+        stars3ls.fixedToCamera = true;
 
+        this.game.add.sprite(0, 0, 'gradient').fixedToCamera = true;
 
-        player = this.add.sprite(64000 / 2, 64000 / 2, 'ship');
+        player = this.game.add.sprite(64000 / 2, 64000 / 2, 'ship');
         player.anchor.setTo(0.5, 0.5);
         player.smoothed = false;
         player.scale.setTo(SCALE, SCALE);
         this.game.physics.arcade.enable(player);
         player.body.collideWorldBounds = true;
 
-        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.22, 0.22); // FOLLOW_TOPDOWN
+        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.25, 0.25);
         lastX = this.game.camera.position.x;
         lastY = this.game.camera.position.y;
 
@@ -74,20 +94,79 @@ Game.Space.prototype = {
 
         // Updates background star positions to follow at different speeds 
         {
+            // Updates the delta position of the camera's position
             var changeX = this.game.camera.position.x - lastX;
             var changeY = this.game.camera.position.y - lastY;
 
             lastX = this.game.camera.position.x;
             lastY = this.game.camera.position.y;
 
-            stars1.tilePosition.x += changeX / 2;
-            stars1.tilePosition.y += changeY / 2;
+            // If going over light speed
+            if (player.body.speed >= lsFullSpeed) {
+                // Hide regular stars and show light speed stars
+                stars1.alpha = 0;
+                stars2.alpha = 0;
+                stars3.alpha = 0;
+                stars2ls.alpha = 1;
+                stars3ls.alpha = 1;
 
-            stars2.tilePosition.x += changeX / 4;
-            stars2.tilePosition.y += changeY / 4;
+                lsStars();
 
-            stars3.tilePosition.x += changeX / 8;
-            stars3.tilePosition.y += changeY / 8;
+                // If inbetween light speed and regular speed
+            } else if (player.body.speed > lsStartSpeed) {
+                // Find the desired opacity of the light stars, linearly proprortional to the speed for a smooth transition into and out of light speed
+                var opacity = (lsFullSpeed - player.body.speed) / (lsFullSpeed - lsStartSpeed);
+
+                stars1.alpha = opacity;
+                stars2.alpha = opacity;
+                stars3.alpha = opacity;
+                stars2ls.alpha = 1 - opacity;
+                stars3ls.alpha = 1 - opacity;
+
+                lsStars();
+                normalStars();
+
+                // Else, going regular speed
+            } else {
+                // Draw regular stars and hide light speed stars
+                stars1.alpha = 1;
+                stars2.alpha = 1;
+                stars3.alpha = 1;
+                stars2ls.alpha = 0;
+                stars3ls.alpha = 0;
+
+                normalStars();
+            }
+
+            function normalStars() {
+                // Moves the tileSprite's tilePosition property, makes background appear to scroll with the player
+                stars1.tilePosition.x += -changeX + changeX / 4;
+                stars1.tilePosition.y += -changeY + changeY / 4;
+
+                stars2.tilePosition.x += -changeX + changeX / 8;
+                stars2.tilePosition.y += -changeY + changeY / 8;
+
+                stars3.tilePosition.x += -changeX + changeX / 16;
+                stars3.tilePosition.y += -changeY + changeY / 16;
+            }
+
+            function lsStars() {
+                // Calculates the total magnitude of speed change. This is because the sprite for light speed only scrolls across the the x axis, and then rotates to properly be scrolling in any direction
+                var changeMagnitude = Math.sqrt(changeX * changeX + changeY * changeY);
+
+                // Moves the tileSprite's tilePosition property, makes background appear to scroll with the player
+                stars2ls.tilePosition.x += -changeMagnitude + changeMagnitude / 4;
+                stars3ls.tilePosition.x += -changeMagnitude + changeMagnitude / 8;
+
+                // Finds the angle that the ship is at
+                var angle = Math.atan(player.body.velocity.y / player.body.velocity.x);
+
+                // Tangent function repeats twice in a single 2PI radian circle, so it can't differentiate between forwards and backwards angles without this help
+                if (player.body.velocity.x < 0) angle += Math.PI;
+
+                stars2ls.rotation = angle;
+                stars3ls.rotation = angle;
+            }
         }
 
         var up = controls.w.isDown || controls.up.isDown;
@@ -95,12 +174,16 @@ Game.Space.prototype = {
         var right = controls.d.isDown || controls.right.isDown;
         var left = controls.a.isDown || controls.left.isDown;
 
+        // If any controls are being pressed, show fire coming from the ship, otherwise do nothing 
         if (up || down || left || right) {
             fire.animations.play('on');
         } else {
             fire.animations.play('off');
         }
 
+        //console.log(player.body.speed)
+
+        // Applies thrust and sprite rotation to the ship based on control input
         if (right && up) {
             player.body.velocity.x += angularThrustersComponent;
             player.body.velocity.y -= angularThrustersComponent;
@@ -131,29 +214,10 @@ Game.Space.prototype = {
             player.rotation = 3 * Math.PI / 2;
         }
 
+        // Caps the maximum speed of the space ship
+        player.body.velocity.setMagnitude(Math.min(maxSpeed, player.body.velocity.getMagnitude()));
 
-
-        /*
-        if (controls.d.isDown) {
-            player.body.velocity.x += sideThrusterrs;
-        }
-        if (controls.right.isDown){
-            player.body.angularVelocity += rotationalThrusters;
-        }
-        if (controls.a.isDown) {
-            player.body.velocity.x -= sideThrusterrs;
-        }
-        if (controls.left.isDown){
-            player.body.angularVelocity -= rotationalThrusters;
-        }
-        if (controls.w.isDown) {
-            player.body.velocity.y -= mainThrusters;
-        }
-        if (controls.s.isDown) {
-            player.body.velocity.y += backThrusters;
-        }*/
-
-
+        // Debug
         if (controls.down.downDuration()) {
             showDebug = !showDebug;
 
@@ -161,23 +225,6 @@ Game.Space.prototype = {
                 this.game.debug.reset();
             }
         }
-
-        /*
-        if (cursors.up.isDown) {
-            this.camera.y -= 4;
-            console.log("y: " + this.camera.y)
-        } else if (cursors.down.isDown) {
-            this.camera.y += 4;
-            console.log("y: " + this.camera.y)
-        }
-
-        if (cursors.left.isDown) {
-            this.camera.x -= 4;
-            console.log("x: " + this.camera.x)
-        } else if (cursors.right.isDown) {
-            this.camera.x += 4;
-            console.log("x: " + this.camera.x)
-        }*/
     },
 
     render: function () {
