@@ -19,7 +19,7 @@ var showDebug = false;
 Game.Level1.prototype = {
     create: function () {
 
-        this.game.physics.arcade.gravity.y = 1400;
+        this.game.physics.arcade.gravity.y = 1200; //1400 = Earth
 
         this.game.stage.backgroundColor = '#3A5963'
 
@@ -30,10 +30,24 @@ Game.Level1.prototype = {
         layer.resizeWorld();
 
         map.setCollisionBetween(0, 3);
-        map.setCollisionBetween(102, 102);
+        map.setCollision(130);
+        map.setCollision(194);
+        map.forEach(function (tile) {
+            if (tile.index === 194) {
+                //tile.collideDown = false;
+                tile.collideLeft = false;
+                tile.collideRight = false;
+                tile.collideUp = true;
+                tile.collideDown = false;
+                tile.faceUp = true;
+                tile.faceDown = false;
+                tile.faceLeft = false;
+                tile.faceRight = false;
+            }
+        }, this, 0, 0, map.width, map.height, layer);
 
         player = this.add.sprite(100, 50, 'player');
-        player.name = 'atari';
+        player.smoothed = false;
         player.anchor.setTo(0.5, 0.5);
         player.animations.add('idle', [3, 8], 1, true);
         player.animations.add('jump', [6], 1, true);
@@ -109,11 +123,8 @@ Game.Level1.prototype = {
             }
         }
 
-        if (player.body.velocity.x == 0 && player.body.velocity.y == 0) {
+        if (player.body.velocity.y == 0 && player.body.velocity.x == 0) {
             player.animations.play('idle');
-
-            // Rounds the player's position upon halting to prevent anti-aliasing when not moving
-            player.body.position.x = Math.round(player.body.position.x)
         }
 
         if ((controls.up.downDuration() || controls.up_1.downDuration() || controls.up_2.downDuration()) && this.game.time.now > jumpTimer) {

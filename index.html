@@ -39,15 +39,18 @@
     <script src="scripts/MainMenu.js"></script>
 
     <script src="scripts/Level1.js"></script>
+    
+    <script src="scripts/Space.js"></script>
 
     <script type="text/javascript">
         window.onload = function() {
-            var game = new Phaser.Game(16 * 18, 9 * 18, Phaser.AUTO, '');
+            var game = new Phaser.Game(16 * 80, 9 * 80, Phaser.AUTO, '');
             
             game.state.add('Boot', Game.Boot);
             game.state.add('Preloader', Game.Preloader);
             game.state.add('MainMenu', Game.MainMenu);
             game.state.add('Level1', Game.Level1);
+            game.state.add('Space', Game.Space);
 
             game.state.start('Boot');
 

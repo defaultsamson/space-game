@@ -22,10 +22,14 @@ Game.Preloader.prototype = {
         
         this.load.spritesheet('player', 'assets/running.png', 36, 40)
         
+        this.load.image('ship', 'assets/ship/ship.png');
+        this.load.spritesheet('fire', 'assets/ship/fire.png', 7, 20);
+        
         //tilemap.smoothed = false;
     },
 
     create: function () {
-        this.state.start('Level1');
+        //this.state.start('Level1');
+        this.state.start('Space');
     }
 };
