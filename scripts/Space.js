@@ -13,7 +13,6 @@ var fire;
 var controls = {};
 const thrustersMagnitude = 8;
 const angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnitude / 2);
-const maxSpeed = 5000;
 
 var stars1;
 var stars2;
@@ -24,9 +23,13 @@ var stars2ls; // ls = lightspeed
 var stars3ls;
 // The biggest width it will need is the worst case scenario (where the LS effect is rotated such that the width needs to cover the diagonal length accross the screen)
 const maxRequiredLSWidth = Math.ceil(Math.sqrt(WINDOW_WIDTH * WINDOW_WIDTH + WINDOW_HEIGHT * WINDOW_HEIGHT));
+var glow;
+const maxGlowOpacity = 0.2;
 
 const lsStartSpeed = 2500;
 const lsFullSpeed = 2800;
+const lsStartGlow = 3500;
+const maxSpeed = 5000;
 
 var showDebug = false;
 
@@ -52,6 +55,10 @@ Game.Space.prototype = {
         stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars3ls');
         stars3ls.anchor.setTo(0.5, 0.5);
         stars3ls.fixedToCamera = true;
+        glow = this.game.add.sprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, 'glow');
+        glow.anchor.setTo(0.5, 0.5);
+        glow.fixedToCamera = true;
+        glow.scale.setTo(4, 4);
 
         this.game.add.sprite(0, 0, 'gradient').fixedToCamera = true;
 
@@ -62,7 +69,7 @@ Game.Space.prototype = {
         this.game.physics.arcade.enable(player);
         player.body.collideWorldBounds = true;
 
-        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.25, 0.25);
+        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.5, 0.5);
         lastX = this.game.camera.position.x;
         lastY = this.game.camera.position.y;
 
@@ -101,7 +108,7 @@ Game.Space.prototype = {
             lastX = this.game.camera.position.x;
             lastY = this.game.camera.position.y;
 
-            // If going over light speed
+            // If going over light speed   
             if (player.body.speed > lsFullSpeed) {
                 // Hide regular stars and show light speed stars
                 stars1.alpha = 0;
@@ -110,7 +117,19 @@ Game.Space.prototype = {
                 stars2ls.alpha = 1;
                 stars3ls.alpha = 1;
 
-                lsStars();
+                if (player.body.speed > lsStartGlow) {
+                    // Find the desired opacity of the glow, linearly proprortional to the speed for a smooth transition into and out of the glow
+                    var opacity = (maxSpeed - player.body.speed) / (maxSpeed - lsStartGlow);
+
+                    glow.alpha = (1 - opacity) * maxGlowOpacity;
+                    
+                    lsStars(true);
+
+                } else {
+                    glow.alpha = 0;
+                    
+                    lsStars(false);
+                }
 
                 // If inbetween light speed and regular speed
             } else if (player.body.speed > lsStartSpeed) {
@@ -122,8 +141,9 @@ Game.Space.prototype = {
                 stars3.alpha = opacity;
                 stars2ls.alpha = 1 - opacity;
                 stars3ls.alpha = 1 - opacity;
+                glow.alpha = 0;
 
-                lsStars();
+                lsStars(false);
                 normalStars();
 
                 // Else, going regular speed
@@ -134,8 +154,11 @@ Game.Space.prototype = {
                 stars3.alpha = 1;
                 stars2ls.alpha = 0;
                 stars3ls.alpha = 0;
+                glow.alpha = 0;
 
                 normalStars();
+
+                lsStars(true);
             }
 
             function normalStars() {
@@ -150,7 +173,7 @@ Game.Space.prototype = {
                 stars3.tilePosition.y += -changeY + changeY / 16;
             }
 
-            function lsStars() {
+            function lsStars(doGlow) {
                 // Calculates the total magnitude of speed change. This is because the sprite for light speed only scrolls across the the x axis, and then rotates to properly be scrolling in any direction
                 var changeMagnitude = Math.sqrt(changeX * changeX + changeY * changeY);
 
@@ -166,6 +189,11 @@ Game.Space.prototype = {
 
                 stars2ls.rotation = angle;
                 stars3ls.rotation = angle;
+
+                // If 
+                if (doGlow) {
+                    glow.rotation = angle + Math.PI / 2;
+                }
             }
         }
 
