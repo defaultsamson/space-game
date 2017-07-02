@@ -19,7 +19,6 @@ Game.Boot.prototype = {
     },
 
     create: function () {
-        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT; // Phaser.ScaleManager.SHOW_ALL USER_SCALE
 
         this.scale.pageAlignHorizontally = true;
