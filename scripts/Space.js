@@ -17,9 +17,10 @@ const angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnit
 const maxSpeed = 5000;
 
 const planetLandRadius = 10;
+
 var planets;
 var planet1;
-
+var landingText;
 
 // Ambient stuff
 var stars1;
@@ -114,14 +115,14 @@ Game.Space.prototype = {
     },
 
     resize: function () {
-
+       
     },
 
     update: function () {
 
         this.game.physics.arcade.collide(player, planets);
         this.game.physics.arcade.overlap(player, planets, function (player, planet) {
-            
+
         }, null, this);
 
         // Updates background star positions to follow at different speeds 

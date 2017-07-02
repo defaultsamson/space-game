@@ -34,7 +34,7 @@ Game.Preloader.prototype = {
         
         this.load.image('sand', 'assets/planets/sand.png');
 
-
+        this.load.bitmapFont('carrier_command', 'assets/font/carrier_command.png', 'assets/font/carrier_command.xml')
         //tilemap.smoothed = false;
     },
 
