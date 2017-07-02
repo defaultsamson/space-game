@@ -8,8 +8,6 @@
         body {
             padding: 0;
             margin: 0;
-            overflow-y: hidden;
-            overflow-x: hidden;
             background-color: black;
             /* Older versions of FF          */
             image-rendering: optimizeSpeed;
@@ -23,6 +21,7 @@
             image-rendering: pixelated;
             /* IE                            */
             -ms-interpolation-mode: nearest-neighbor;
+            min-height: 10
         }
 
     </style>
@@ -56,7 +55,6 @@
             game.state.start('Boot');
 
         }
-
     </script>
 </body>
 

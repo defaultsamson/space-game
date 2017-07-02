@@ -19,18 +19,26 @@ Game.Boot.prototype = {
     },
 
     create: function () {
-        this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT; // Phaser.ScaleManager.SHOW_ALL USER_SCALE
+        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; // Phaser.ScaleManager.SHOW_ALL USER_SCALE EXACT_FIT
 
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
 
+        this.scale.parentIsWindow = true;
+
+        /*
         this.scale.setResizeCallback(function () {
             var width = window.innerWidth;
             var height = window.innerHeight;
             console.log('size: ' + width + ', ' + height);
             this.camera.setSize(width, height);
-            this.game.renderer.resize(width, height);
-        }, this);
+            //this.game.renderer.resize(width, height);
+            //this.game.scale.refresh(true)
+
+
+            //this.game.stage.bounds.width = width;
+           // this.game.stage.bounds.height = height;
+        }, this);*/
 
 
         /* WORKING

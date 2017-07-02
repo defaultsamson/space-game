@@ -3,8 +3,8 @@ Game.Space = function (game) {
 };
 
 const SCALE = 4;
-const WINDOW_WIDTH = 1280;
-const WINDOW_HEIGHT = 720;
+const WINDOW_WIDTH = 16 * 80;
+const WINDOW_HEIGHT = 9 * 80;
 
 //var cursors;
 
@@ -47,9 +47,9 @@ Game.Space.prototype = {
         this.game.physics.arcade.gravity.y = 0; //1400 = Earth
 
         this.game.world.resize(64000, 64000);
-        this.game.debug.resize(Phaser.ScaleManager, WINDOW_WIDTH, WINDOW_HEIGHT)
+        this.game.debug.resize(Phaser.ScaleManager, WINDOW_WIDTH, WINDOW_HEIGHT);
         this.game.stage.backgroundColor = '#211a23';
-        this.game.renderer.renderSession.roundPixels = true
+        this.game.renderer.renderSession.roundPixels = true;
 
         stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars1');
         stars1.fixedToCamera = true;
