@@ -24,6 +24,7 @@
             /* IE                            */
             -ms-interpolation-mode: nearest-neighbor;
         }
+
     </style>
 </head>
 
@@ -39,13 +40,13 @@
     <script src="scripts/MainMenu.js"></script>
 
     <script src="scripts/Level1.js"></script>
-    
+
     <script src="scripts/Space.js"></script>
 
     <script type="text/javascript">
         window.onload = function() {
             var game = new Phaser.Game(16 * 80, 9 * 80, Phaser.AUTO, '');
-            
+
             game.state.add('Boot', Game.Boot);
             game.state.add('Preloader', Game.Preloader);
             game.state.add('MainMenu', Game.MainMenu);
@@ -55,6 +56,7 @@
             game.state.start('Boot');
 
         }
+
     </script>
 </body>
 

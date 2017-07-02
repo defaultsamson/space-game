@@ -12,6 +12,12 @@ var controls = {};
 var thrustersMagnitude = 8;
 var angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnitude / 2);
 
+var stars1;
+var stars2;
+var stars3;
+var lastX;
+var lastY;
+
 var showDebug = false;
 
 Game.Space.prototype = {
@@ -22,17 +28,23 @@ Game.Space.prototype = {
         this.game.world.resize(64000, 64000);
 
         this.game.stage.backgroundColor = '#211a23';
+        this.game.renderer.renderSession.roundPixels = true
+
+        stars1 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars1');
+        stars2 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars2');
+        stars3 = this.game.add.tileSprite(0, 0, 64000, 64000, 'stars3');
+
 
         player = this.add.sprite(64000 / 2, 64000 / 2, 'ship');
         player.anchor.setTo(0.5, 0.5);
         player.smoothed = false;
         player.scale.setTo(SCALE, SCALE);
         this.game.physics.arcade.enable(player);
-        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.17, 0.17); // FOLLOW_TOPDOWN
-        this.game.renderer.renderSession.roundPixels = true
         player.body.collideWorldBounds = true;
-        //player.body.allowRotation = true;
-        //player.body.setSize(20, 32, 8, 8);
+
+        this.game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.22, 0.22); // FOLLOW_TOPDOWN
+        lastX = this.game.camera.position.x;
+        lastY = this.game.camera.position.y;
 
         fire = player.addChild(this.game.add.sprite(0, 20, 'fire'));
         fire.anchor.setTo(0.5, 0.5);
@@ -40,14 +52,6 @@ Game.Space.prototype = {
         fire.scale.setTo(1, -1);
         fire.animations.add('on', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 20, true);
         fire.animations.add('off', [12], 1, true);
-
-        /*
-        player = this.add.sprite(64000 / 2, 64000 / 2, 'ship');
-        player.smoothed = true;
-        player.anchor.setTo(0.5, 0.5);
-        player.animations.add('idle', [3, 8], 1, true);
-        player.animations.add('jump', [6], 1, true);
-        player.animations.add('run', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 20, true);*/
 
         controls = {
             d: this.game.input.keyboard.addKey(Phaser.Keyboard.D),
@@ -68,15 +72,28 @@ Game.Space.prototype = {
 
     update: function () {
 
-        //this.game.physics.arcade.collide(player, layer);
+        // Updates background star positions to follow at different speeds 
+        {
+            var changeX = this.game.camera.position.x - lastX;
+            var changeY = this.game.camera.position.y - lastY;
 
-        //player.body.velocity.x = 0;
-        //player.body.angularVelocity = 0;
+            lastX = this.game.camera.position.x;
+            lastY = this.game.camera.position.y;
+
+            stars1.tilePosition.x += changeX / 2;
+            stars1.tilePosition.y += changeY / 2;
+
+            stars2.tilePosition.x += changeX / 4;
+            stars2.tilePosition.y += changeY / 4;
+
+            stars3.tilePosition.x += changeX / 8;
+            stars3.tilePosition.y += changeY / 8;
+        }
+
         var up = controls.w.isDown || controls.up.isDown;
         var down = controls.s.isDown || controls.down.isDown;
         var right = controls.d.isDown || controls.right.isDown;
         var left = controls.a.isDown || controls.left.isDown;
-
 
         if (up || down || left || right) {
             fire.animations.play('on');
