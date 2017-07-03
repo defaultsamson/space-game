@@ -15,12 +15,19 @@ var controls = {};
 const thrustersMagnitude = 8;
 const angularThrustersComponent = Math.sqrt(thrustersMagnitude * thrustersMagnitude / 2);
 const maxSpeed = 5000;
+var warningText;
+const defaultWarningText = "Crash Imminent";
+const crashCheckReset = 20;
+var crashCheck = crashCheckReset;
+const minCrashSpeed = 1000;
+const maxWarningDisplay = 10; //seconds
 
 const planetLandRadius = 10;
 
 var planets;
 var planet1;
 var landingText;
+var planetName;
 
 // Ambient stuff
 var stars1;
@@ -47,16 +54,22 @@ Game.Space.prototype = {
         this.game.physics.arcade.gravity.y = 0; //1400 = Earth
 
         this.game.world.resize(64000, 64000);
-        this.game.debug.resize(Phaser.ScaleManager, WINDOW_WIDTH, WINDOW_HEIGHT);
+
+        if (this.game.renderType != Phaser.CANVAS) {
+            this.game.debug.resize(Phaser.ScaleManager, WINDOW_WIDTH, WINDOW_HEIGHT);
+        }
         this.game.stage.backgroundColor = '#211a23';
         this.game.renderer.renderSession.roundPixels = true;
 
         stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars1');
         stars1.fixedToCamera = true;
+        stars1.smoothed = false;
         stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars2');
         stars2.fixedToCamera = true;
+        stars2.smoothed = false;
         stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars3');
         stars3.fixedToCamera = true;
+        stars3.smoothed = false;
         stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars2ls');
         stars2ls.anchor.setTo(0.5, 0.5);
         stars2ls.fixedToCamera = true;
@@ -93,16 +106,36 @@ Game.Space.prototype = {
         fire.animations.add('off', [12], 1, true);
 
         planets = this.game.add.group();
-        planets.enableBody = true;
-        planets.physicsBodyType = Phaser.Physics.ARCADE;
+        //planets.enableBody = true;
+        //planets.physicsBodyType = Phaser.Physics.ARCADE;
 
         planet1 = planets.create(64000 / 2 + 200, 64000 / 2 + 200, 'sand');
         planet1.smoothed = false;
-        planet1.body.setCircle(planet1.width / 2 + planetLandRadius, -planetLandRadius, -planetLandRadius);
+        //planet1.body.setCircle(planet1.width / 2 + planetLandRadius, -planetLandRadius, -planetLandRadius);
         planet1.scale.setTo(8, 8);
-        planet1.attraction = 180000;
+        planet1.attraction = 250000 //180000;
         planet1.radius = planet1.width / 2;
+        planet1.landRadius = planet1.radius + planetLandRadius;
         planet1.attrRadius = planet1.width * 4;
+        planet1.nameRadius = planet1.width * 2;
+        planet1.name = 'Dankworld II';
+
+        landingText = this.game.add.bitmapText(WINDOW_WIDTH / 2, 70, 'carrier_command', 'Current Planet', 16);
+        landingText.fixedToCamera = true;
+        landingText.smoothed = false;
+        landingText.anchor.setTo(0.5, 0.5);
+        landingText.visible = false;
+        planetName = landingText.addChild(this.game.add.bitmapText(0, 30, 'carrier_command', 'name', 16));
+        planetName.fixedToCamera = true;
+        planetName.smoothed = false;
+        planetName.anchor.setTo(0.5, 0.5);
+        planetName.visible = false;
+
+        warningText = this.game.add.bitmapText(WINDOW_WIDTH / 2, WINDOW_HEIGHT - 60, 'carrier_command', 'WARNING: Approaching Object', 16);
+        warningText.fixedToCamera = true;
+        warningText.smoothed = false;
+        warningText.anchor.setTo(0.5, 0.5);
+        warningText.visible = false;
 
         controls = {
             d: this.game.input.keyboard.addKey(Phaser.Keyboard.D),
@@ -118,18 +151,21 @@ Game.Space.prototype = {
     },
 
     resize: function () {
-       
+
     },
 
     update: function () {
 
-        
+
+        /*
         //this.game.physics.arcade.collide(player, planets);
         this.game.physics.arcade.overlap(player, planets, function (player, planet) {
+            planetName.text = planet.name;
+            planetName.visible = true;
+            landingText.visible = true;
+        }, null, this);*/
 
-        }, null, this);
 
-        
         // Updates background star positions to follow at different speeds 
         {
             // Updates the delta position of the camera's position
@@ -228,22 +264,128 @@ Game.Space.prototype = {
             }
         }
 
+        var doCrashCheck = false;
+        if (crashCheck > 0) {
+            crashCheck--;
+
+        } else {
+            crashCheck = crashCheckReset;
+
+            warningText.visible = false;
+
+            // if going really fast
+            if (player.body.speed >= minCrashSpeed) {
+                // Do a crash check every bunch of counts
+                // A crash check tells the plarer whether or not they're in danger of hitting a planet when going really fast
+                doCrashCheck = true;
+            } else {
+                // TODO: Reset crash warning
+
+                /*
+                var mX = player.body.velocity.x;
+                var mY = player.body.velocity.y;
+
+                var pX = player.body.position.x;
+                var pY = player.body.position.y;
+
+                var a = -mY;
+                var b = mX;
+                var c = (pX * mY) - (mX * pY);
+
+                var p2X = planet1.position.x + planet1.radius;
+                var p2Y = planet1.position.y + planet1.radius;
+
+                var dist = Math.abs(a * p2X + b * p2Y + c) / Math.sqrt(a * a + b * b)
+
+                // dX * y + -dY * x + -dX * y1 + dY * x1
+
+                if (dist < planet1.landRadius)
+                    console.log('Feck lad ' + dist)
+
+
+                //console.log('x: ' + mX + ' y: ' + mY + ' p: (' + pX + ', ' + pY + ')');*/
+            }
+        }
+
+
+        /* old crash check code
+        if (player.body.speed > lsStartSpeed) {
+            crashCheck--;
+            if (crashCheck < 0) {
+                crashCheck = crashCheckReset;
+                doCrashCheck = true;
+            }
+        }*/
+
+        planetName.visible = false;
+        landingText.visible = false;
+
         planets.forEach(function (planet) {
             if (planet.attraction) {
-                var radius = planet.attrRadius ? planet.attrRadius : planet.width / 2;
-                var x = player.position.x - planet.position.x - planet.radius;
-                var y = player.position.y - planet.position.y - planet.radius;
-                var shipDistanceSqr = x * x + y * y;
+
+                // Delta position between planet and player
+                var dX = (planet.position.x + planet.radius) - player.position.x;
+                var dY = (planet.position.y + planet.radius) - player.position.y;
+                var shipDistanceSqr = dX * dX + dY * dY;
                 var shipDistance = Math.sqrt(shipDistanceSqr);
-                // If the ship is within the attraction radius of a planet
-                if (shipDistance <= radius) {
+
+                // If the ship is within the attraction radius of a planet's gravity, attract the ship towards the planet
+                if (shipDistance <= planet.attrRadius) {
                     // The force using Netwonian gravitiation
                     var attraction = planet.attraction / shipDistanceSqr;
 
                     // Using some trig knowledge, find the components of the force
-                    // Also subtract the force because by default negative is towards to object
-                    player.body.velocity.x -= attraction * x / shipDistance;
-                    player.body.velocity.y -= attraction * y / shipDistance;
+                    player.body.velocity.x += attraction * dX / shipDistance;
+                    player.body.velocity.y += attraction * dY / shipDistance;
+                }
+
+                if (shipDistance <= planet.nameRadius && player.body.speed < minCrashSpeed) {
+                    planetName.text = planet.name;
+                    planetName.visible = true;
+                    landingText.visible = true;
+                }
+
+                if (shipDistance <= planet.landRadius) {
+                    // TODO land here
+                }
+
+                // If it's told to do crash checks and it's not already showing a warning
+                if (doCrashCheck && !warningText.visible) {
+
+                    // Player
+                    var pX = player.body.position.x;
+                    var pY = player.body.position.y;
+
+                    var mX = player.body.velocity.x;
+                    var mY = player.body.velocity.y;
+
+                    // Planet
+                    var p2X = planet.position.x + planet.radius;
+                    var p2Y = planet.position.y + planet.radius;
+
+                    // If the player's velocity is in a direction that would result in a collision
+                    // (e.g. prevents from collision detection against objects behind the player)
+                    if (((dX < 0 && mX < 0) || (dX > 0 && mY > 0)) && ((dY < 0 && mY < 0) || (dY > 0 && mY > 0))) {
+
+                        var timeUntilCrash = Math.floor(Math.abs(shipDistance / player.body.speed));
+
+                        if (timeUntilCrash <= maxWarningDisplay) {
+                            // https://math.stackexchange.com/questions/275529/check-if-line-intersects-with-circles-perimeter
+
+                            // Find the shortest distance between the point (the planet's (x,y)) and the line (the player's velocity vector)
+                            var a = -mY;
+                            var b = mX;
+                            var c = (pX * mY) - (mX * pY);
+                            var dist = Math.abs(a * p2X + b * p2Y + c) / Math.sqrt(a * a + b * b)
+
+                            // If the distance from the line to the center of the planet is less than the land radius, that means that it intersects and it's gonna crash yo
+                            if (dist < planet.landRadius) {
+                                warningText.visible = true;
+
+                                warningText.text = defaultWarningText + ' (T-' + timeUntilCrash + ')';
+                            }
+                        }
+                    }
                 }
             } else {
                 console.log('Warning, object in planets group is not a planet');
@@ -262,7 +404,7 @@ Game.Space.prototype = {
             fire.animations.play('off');
         }
 
-        //console.log(player.body.speed)
+        // console.log(player.body.speed)
 
         // Applies thrust and sprite rotation to the ship based on control input
         if (right && up) {

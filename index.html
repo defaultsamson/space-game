@@ -25,7 +25,6 @@
             -ms-interpolation-mode: nearest-neighbor;
             min-height: 10
         }
-
     </style>
 </head>
 
@@ -46,7 +45,7 @@
 
     <script type="text/javascript">
         window.onload = function() {
-            var game = new Phaser.Game(16 * 40, 9 * 40, Phaser.AUTO, '');
+            var game = new Phaser.Game(16 * 40, 9 * 40, Phaser.WEBGL_MULTI, '');
 
             game.state.add('Boot', Game.Boot);
             game.state.add('Preloader', Game.Preloader);
