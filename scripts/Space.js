@@ -2,9 +2,9 @@ Game.Space = function (game) {
     this.game = game;
 };
 
-const SCALE = 4;
-const WINDOW_WIDTH = 16 * 80;
-const WINDOW_HEIGHT = 9 * 80;
+const SCALE = 2;
+const WINDOW_WIDTH = 16 * 40;
+const WINDOW_HEIGHT = 9 * 40;
 
 //var cursors;
 
@@ -33,7 +33,7 @@ var stars3ls;
 // The biggest width it will need is the worst case scenario (where the LS effect is rotated such that the width needs to cover the diagonal length accross the screen)
 const maxRequiredLSWidth = Math.ceil(Math.sqrt(WINDOW_WIDTH * WINDOW_WIDTH + WINDOW_HEIGHT * WINDOW_HEIGHT));
 var glow;
-const maxGlowOpacity = 0.2;
+const maxGlowOpacity = 0.12;
 // Speeds
 const lsStartSpeed = 2500;
 const lsFullSpeed = 2800;
@@ -68,7 +68,10 @@ Game.Space.prototype = {
         glow.fixedToCamera = true;
         glow.scale.setTo(4, 4);
 
-        this.game.add.sprite(0, 0, 'gradient').fixedToCamera = true;
+        var gradient = this.game.add.sprite(0, 0, 'gradient');
+        gradient.fixedToCamera = true;
+        gradient.scale.setTo(2, 2);
+        gradient.smoothed = false;
 
         player = this.game.add.sprite(64000 / 2, 64000 / 2, 'ship');
         player.anchor.setTo(0.5, 0.5);
@@ -120,11 +123,13 @@ Game.Space.prototype = {
 
     update: function () {
 
-        this.game.physics.arcade.collide(player, planets);
+        
+        //this.game.physics.arcade.collide(player, planets);
         this.game.physics.arcade.overlap(player, planets, function (player, planet) {
 
         }, null, this);
 
+        
         // Updates background star positions to follow at different speeds 
         {
             // Updates the delta position of the camera's position

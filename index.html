@@ -8,6 +8,8 @@
         body {
             padding: 0;
             margin: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
             background-color: black;
             /* Older versions of FF          */
             image-rendering: optimizeSpeed;
@@ -44,7 +46,7 @@
 
     <script type="text/javascript">
         window.onload = function() {
-            var game = new Phaser.Game(16 * 80, 9 * 80, Phaser.AUTO, '');
+            var game = new Phaser.Game(16 * 40, 9 * 40, Phaser.AUTO, '');
 
             game.state.add('Boot', Game.Boot);
             game.state.add('Preloader', Game.Preloader);
