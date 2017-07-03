@@ -16,11 +16,16 @@ Game.Preloader.prototype = {
 
         // LOAD ALL ASSETS
 
-        var tilemap = this.load.tilemap('map', 'assets/level1.csv');
+        //var tilemap = this.load.tilemap('map', 'assets/level1.csv');
 
-        this.load.image('tileset', 'assets/spritesheet.png');
+        //this.load.image('tileset', 'assets/spritesheet.png');
 
-        this.load.spritesheet('player', 'assets/running.png', 36, 40)
+        //this.load.spritesheet('player', 'assets/running.png', 36, 40)
+
+
+
+        // Space
+
         this.load.image('ship', 'assets/ship/ship.png');
         this.load.spritesheet('fire', 'assets/ship/fire.png', 7, 20);
 
@@ -31,11 +36,10 @@ Game.Preloader.prototype = {
         this.load.image('stars3ls', 'assets/ambient/stars3lightspeed.png');
         this.load.image('gradient', 'assets/ambient/gradient.png');
         this.load.image('glow', 'assets/ambient/lightspeedGlow.png');
-        
+
         this.load.image('sand', 'assets/planets/sand.png');
 
-        this.load.bitmapFont('carrier_command', 'assets/font/carrier_command.png', 'assets/font/carrier_command.xml')
-        //tilemap.smoothed = false;
+        this.load.bitmapFont('carrier_command', 'assets/font/carrier_command.png', 'assets/font/carrier_command.xml');
     },
 
     create: function () {
