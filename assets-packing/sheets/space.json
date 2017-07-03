@@ -1,0 +1,76 @@
+{
+	"width": 1092,
+	"height": 1540,
+	"sprites": {
+		"ambient/stars1.png": {
+			"x": 1,
+			"y": 1,
+			"width": 512,
+			"height": 512,
+			"rotated": false
+		},
+		"ambient/stars2.png": {
+			"x": 1,
+			"y": 514,
+			"width": 512,
+			"height": 512,
+			"rotated": false
+		},
+		"ambient/stars3.png": {
+			"x": 1,
+			"y": 1027,
+			"width": 512,
+			"height": 512,
+			"rotated": false
+		},
+		"ambient/stars2lightspeed.png": {
+			"x": 514,
+			"y": 1,
+			"width": 512,
+			"height": 512,
+			"rotated": false
+		},
+		"ambient/stars3lightspeed.png": {
+			"x": 514,
+			"y": 514,
+			"width": 512,
+			"height": 512,
+			"rotated": false
+		},
+		"ambient/gradient.png": {
+			"x": 514,
+			"y": 1027,
+			"width": 320,
+			"height": 180,
+			"rotated": false
+		},
+		"ambient/lightspeedGlow.png": {
+			"x": 835,
+			"y": 1027,
+			"width": 256,
+			"height": 256,
+			"rotated": false
+		},
+		"ship/fire.png": {
+			"x": 514,
+			"y": 1208,
+			"width": 20,
+			"height": 91,
+			"rotated": true
+		},
+		"planets/sand.png": {
+			"x": 535,
+			"y": 1208,
+			"width": 30,
+			"height": 30,
+			"rotated": false
+		},
+		"ship/ship.png": {
+			"x": 535,
+			"y": 1239,
+			"width": 15,
+			"height": 23,
+			"rotated": false
+		}
+	}
+}

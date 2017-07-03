@@ -1,0 +1,12 @@
+ambient/gradient.png
+ambient/lightspeedGlow.png
+ambient/stars1.png
+ambient/stars2.png
+ambient/stars3.png
+ambient/stars2lightspeed.png
+ambient/stars3lightspeed.png
+
+planets/sand.png
+
+ship/fire.png
+ship/ship.png
