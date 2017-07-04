@@ -31,13 +31,13 @@ Game.Preloader.prototype = {
         //this.load.image('ship', 'assets/ship/ship.png');
         this.load.spritesheet('fire', 'ship/fire.png', 7, 20);
 
-        this.load.image('stars1', 'ambient/stars1.png');
-        this.load.image('stars2', 'ambient/stars2.png');
-        this.load.image('stars3', 'ambient/stars3.png');
-        this.load.image('stars2ls', 'ambient/stars2lightspeed.png');
-        this.load.image('stars3ls', 'ambient/stars3lightspeed.png');
-        this.load.image('gradient', 'ambient/gradient.png');
-        this.load.image('glow', 'ambient/lightspeedGlow.png');
+        //this.load.image('stars1', 'ambient/stars1.png');
+        //this.load.image('stars2', 'ambient/stars2.png');
+        //this.load.image('stars3', 'ambient/stars3.png');
+        //this.load.image('stars2ls', 'ambient/stars2lightspeed.png');
+        //this.load.image('stars3ls', 'ambient/stars3lightspeed.png');
+        //this.load.image('gradient', 'ambient/gradient.png');
+        //this.load.image('glow', 'ambient/lightspeedGlow.png');
 
         //this.load.image('sand', 'assets/planets/sand.png');
 

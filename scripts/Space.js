@@ -61,27 +61,27 @@ Game.Space.prototype = {
         this.game.stage.backgroundColor = '#211a23';
         this.game.renderer.renderSession.roundPixels = true;
 
-        stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars1');
+        stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars1');
         stars1.fixedToCamera = true;
         stars1.smoothed = false;
-        stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars2');
+        stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars2');
         stars2.fixedToCamera = true;
         stars2.smoothed = false;
-        stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'stars3');
+        stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars3');
         stars3.fixedToCamera = true;
         stars3.smoothed = false;
-        stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars2ls');
+        stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'space', 'ambient/stars2lightspeed');
         stars2ls.anchor.setTo(0.5, 0.5);
         stars2ls.fixedToCamera = true;
-        stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'stars3ls');
+        stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'space', 'ambient/stars3lightspeed');
         stars3ls.anchor.setTo(0.5, 0.5);
         stars3ls.fixedToCamera = true;
-        glow = this.game.add.sprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, 'glow');
+        glow = this.game.add.sprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, 'space', 'ambient/lightspeedGlow');
         glow.anchor.setTo(0.5, 0.5);
         glow.fixedToCamera = true;
         glow.scale.setTo(4, 4);
 
-        var gradient = this.game.add.sprite(0, 0, 'gradient');
+        var gradient = this.game.add.sprite(0, 0, 'space', 'ambient/gradient');
         gradient.fixedToCamera = true;
         gradient.scale.setTo(2, 2);
         gradient.smoothed = false;
