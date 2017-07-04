@@ -1,76 +1,222 @@
 {
-	"width": 1092,
-	"height": 1540,
-	"sprites": {
-		"ambient/stars1.png": {
-			"x": 1,
-			"y": 1,
-			"width": 512,
-			"height": 512,
-			"rotated": false
+	"frames": [
+		{
+			"filename": "ambient/stars1",
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
 		},
-		"ambient/stars2.png": {
-			"x": 1,
-			"y": 514,
-			"width": 512,
-			"height": 512,
-			"rotated": false
+		{
+			"filename": "ambient/stars2",
+			"frame": {
+				"x": 1,
+				"y": 514,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
 		},
-		"ambient/stars3.png": {
-			"x": 1,
-			"y": 1027,
-			"width": 512,
-			"height": 512,
-			"rotated": false
+		{
+			"filename": "ambient/stars3",
+			"frame": {
+				"x": 1,
+				"y": 1027,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
 		},
-		"ambient/stars2lightspeed.png": {
-			"x": 514,
-			"y": 1,
-			"width": 512,
-			"height": 512,
-			"rotated": false
+		{
+			"filename": "ambient/stars2lightspeed",
+			"frame": {
+				"x": 514,
+				"y": 1,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
 		},
-		"ambient/stars3lightspeed.png": {
-			"x": 514,
-			"y": 514,
-			"width": 512,
-			"height": 512,
-			"rotated": false
+		{
+			"filename": "ambient/stars3lightspeed",
+			"frame": {
+				"x": 514,
+				"y": 514,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
 		},
-		"ambient/gradient.png": {
-			"x": 514,
-			"y": 1027,
-			"width": 320,
-			"height": 180,
-			"rotated": false
+		{
+			"filename": "ambient/gradient",
+			"frame": {
+				"x": 514,
+				"y": 1027,
+				"w": 320,
+				"h": 180
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 320,
+				"h": 180
+			},
+			"sourceSize": {
+				"w": 320,
+				"h": 180
+			}
 		},
-		"ambient/lightspeedGlow.png": {
-			"x": 835,
-			"y": 1027,
-			"width": 256,
-			"height": 256,
-			"rotated": false
+		{
+			"filename": "ambient/lightspeedGlow",
+			"frame": {
+				"x": 835,
+				"y": 1027,
+				"w": 256,
+				"h": 256
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 256,
+				"h": 256
+			},
+			"sourceSize": {
+				"w": 256,
+				"h": 256
+			}
 		},
-		"ship/fire.png": {
-			"x": 514,
-			"y": 1208,
-			"width": 20,
-			"height": 91,
-			"rotated": true
+		{
+			"filename": "ship/fire",
+			"frame": {
+				"x": 514,
+				"y": 1208,
+				"w": 20,
+				"h": 91
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 20,
+				"h": 91
+			},
+			"sourceSize": {
+				"w": 20,
+				"h": 91
+			}
 		},
-		"planets/sand.png": {
-			"x": 535,
-			"y": 1208,
-			"width": 30,
-			"height": 30,
-			"rotated": false
+		{
+			"filename": "planets/sand",
+			"frame": {
+				"x": 535,
+				"y": 1208,
+				"w": 30,
+				"h": 30
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 30
+			}
 		},
-		"ship/ship.png": {
-			"x": 535,
-			"y": 1239,
-			"width": 15,
-			"height": 23,
-			"rotated": false
+		{
+			"filename": "ship/ship",
+			"frame": {
+				"x": 535,
+				"y": 1239,
+				"w": 15,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 15,
+				"h": 23
+			},
+			"sourceSize": {
+				"w": 15,
+				"h": 23
+			}
+		}
+	],
+	"meta": {
+		"app": "https://github.com/urraka/texpack",
+		"image": "space.png",
+		"size": {
+			"w": 1092,
+			"h": 1540
 		}
 	}
 }
