@@ -1,0 +1,211 @@
+{
+	"frames": {
+		"ambient/stars1": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
+		},
+		"ambient/stars2": {
+			"frame": {
+				"x": 1,
+				"y": 514,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
+		},
+		"ambient/stars3": {
+			"frame": {
+				"x": 1,
+				"y": 1027,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
+		},
+		"ambient/stars2lightspeed": {
+			"frame": {
+				"x": 514,
+				"y": 1,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
+		},
+		"ambient/stars3lightspeed": {
+			"frame": {
+				"x": 514,
+				"y": 514,
+				"w": 512,
+				"h": 512
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 512,
+				"h": 512
+			},
+			"sourceSize": {
+				"w": 512,
+				"h": 512
+			}
+		},
+		"ambient/gradient": {
+			"frame": {
+				"x": 514,
+				"y": 1027,
+				"w": 320,
+				"h": 180
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 320,
+				"h": 180
+			},
+			"sourceSize": {
+				"w": 320,
+				"h": 180
+			}
+		},
+		"ambient/lightspeedGlow": {
+			"frame": {
+				"x": 835,
+				"y": 1027,
+				"w": 256,
+				"h": 256
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 256,
+				"h": 256
+			},
+			"sourceSize": {
+				"w": 256,
+				"h": 256
+			}
+		},
+		"ship/fire": {
+			"frame": {
+				"x": 514,
+				"y": 1208,
+				"w": 20,
+				"h": 91
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 20,
+				"h": 91
+			},
+			"sourceSize": {
+				"w": 20,
+				"h": 91
+			}
+		},
+		"planets/sand": {
+			"frame": {
+				"x": 535,
+				"y": 1208,
+				"w": 30,
+				"h": 30
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 30
+			}
+		},
+		"ship/ship": {
+			"frame": {
+				"x": 535,
+				"y": 1239,
+				"w": 15,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 15,
+				"h": 23
+			},
+			"sourceSize": {
+				"w": 15,
+				"h": 23
+			}
+		}
+	},
+	"meta": {
+		"image": "space.png",
+		"size": {
+			"w": 1092,
+			"h": 1540
+		}
+	}
+}

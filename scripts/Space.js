@@ -86,7 +86,7 @@ Game.Space.prototype = {
         gradient.scale.setTo(2, 2);
         gradient.smoothed = false;
 
-        player = this.game.add.sprite(64000 / 2, 64000 / 2, 'ship');
+        player = this.game.add.sprite(64000 / 2, 64000 / 2, 'space', 'ship/ship');
         player.anchor.setTo(0.5, 0.5);
         player.smoothed = false;
         player.scale.setTo(SCALE, SCALE);
@@ -109,7 +109,7 @@ Game.Space.prototype = {
         //planets.enableBody = true;
         //planets.physicsBodyType = Phaser.Physics.ARCADE;
 
-        planet1 = planets.create(64000 / 2 + 200, 64000 / 2 + 200, 'sand');
+        planet1 = planets.create(64000 / 2 + 200, 64000 / 2 + 200, 'space', 'planets/sand');
         planet1.smoothed = false;
         //planet1.body.setCircle(planet1.width / 2 + planetLandRadius, -planetLandRadius, -planetLandRadius);
         planet1.scale.setTo(8, 8);
