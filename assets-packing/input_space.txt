@@ -10,3 +10,4 @@ planets/sand.png
 
 ship/fire.png
 ship/ship.png
+ship/shipTurn.png
