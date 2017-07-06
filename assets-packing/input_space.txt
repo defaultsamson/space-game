@@ -8,6 +8,17 @@ ambient/stars3lightspeed.png
 
 planets/sand.png
 
-ship/fire.png
+ship/fire1.png
+ship/fire2.png
+ship/fire3.png
+ship/fire4.png
+ship/fire5.png
+ship/fire6.png
+ship/fire7.png
+ship/fire8.png
+ship/fire9.png
+ship/fire10.png
+ship/fire11.png
+ship/fire12.png
 ship/ship.png
-ship/shipTurn.png
+

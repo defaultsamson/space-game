@@ -148,7 +148,7 @@
 			}
 		},
 		{
-			"filename": "ship/shipTurn",
+			"filename": "ship/ship",
 			"frame": {
 				"x": 514,
 				"y": 1208,
@@ -169,9 +169,30 @@
 			}
 		},
 		{
-			"filename": "ship/fire",
+			"filename": "ship/shipTurn",
 			"frame": {
 				"x": 607,
+				"y": 1208,
+				"w": 92,
+				"h": 92
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 92,
+				"h": 92
+			},
+			"sourceSize": {
+				"w": 92,
+				"h": 92
+			}
+		},
+		{
+			"filename": "ship/fire",
+			"frame": {
+				"x": 700,
 				"y": 1208,
 				"w": 20,
 				"h": 91
@@ -192,7 +213,7 @@
 		{
 			"filename": "planets/sand",
 			"frame": {
-				"x": 628,
+				"x": 721,
 				"y": 1208,
 				"w": 30,
 				"h": 30
@@ -208,27 +229,6 @@
 			"sourceSize": {
 				"w": 30,
 				"h": 30
-			}
-		},
-		{
-			"filename": "ship/ship",
-			"frame": {
-				"x": 628,
-				"y": 1239,
-				"w": 15,
-				"h": 23
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 15,
-				"h": 23
-			},
-			"sourceSize": {
-				"w": 15,
-				"h": 23
 			}
 		}
 	],
