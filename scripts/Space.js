@@ -105,6 +105,12 @@ Game.Space.prototype = {
         fire.animations.add('on', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 20, true);
         fire.animations.add('off', [12], 1, true);
 
+        player2 = player.addChild(this.game.add.sprite(0, 20, 'space', 'ship/shipTurn'));
+        player2.anchor.setTo(0.5, 0.5);
+        player2.position.y = 0;
+        player2.smoothed = false;
+        player2.scale.setTo(1 / 4, 1 / 4);
+
         planets = this.game.add.group();
         //planets.enableBody = true;
         //planets.physicsBodyType = Phaser.Physics.ARCADE;
