@@ -1,0 +1,5 @@
+planets/sand.png
+
+ship/fire[1-12].png
+ship/ship.png
+

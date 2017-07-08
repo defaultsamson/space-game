@@ -5,9 +5,3 @@ ambient/stars2.png
 ambient/stars3.png
 ambient/stars2lightspeed.png
 ambient/stars3lightspeed.png
-
-planets/sand.png
-
-ship/fire[1-12].png
-ship/ship.png
-

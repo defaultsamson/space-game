@@ -3,6 +3,8 @@
 
 echo Packing...
 
-./texpack --output sheets/space --padding 1 --size 2048x2048 --max-size --allow-rotate --mode auto --pretty --format jsonarray input_space.txt
+./texpack --output sheets/ambient --padding 1 --size 2048x2048 --max-size --allow-rotate --mode auto --pretty --format jsonarray input_ambient.txt
+
+./texpack --output sheets/entity --padding 1 --size 2048x2048 --max-size --allow-rotate --mode auto --pretty --format jsonarray input_entity.txt
 
 echo Complete! Packed to ./sheets
