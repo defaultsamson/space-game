@@ -61,32 +61,32 @@ Game.Space.prototype = {
         this.game.stage.backgroundColor = '#211a23';
         this.game.renderer.renderSession.roundPixels = true;
 
-        stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars1');
+        stars1 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'ambient', 'ambient/stars1');
         stars1.fixedToCamera = true;
         stars1.smoothed = false;
-        stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars2');
+        stars2 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'ambient', 'ambient/stars2');
         stars2.fixedToCamera = true;
         stars2.smoothed = false;
-        stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'space', 'ambient/stars3');
+        stars3 = this.game.add.tileSprite(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 'ambient', 'ambient/stars3');
         stars3.fixedToCamera = true;
         stars3.smoothed = false;
-        stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'space', 'ambient/stars2lightspeed');
+        stars2ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'ambient', 'ambient/stars2lightspeed');
         stars2ls.anchor.setTo(0.5, 0.5);
         stars2ls.fixedToCamera = true;
-        stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'space', 'ambient/stars3lightspeed');
+        stars3ls = this.game.add.tileSprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, maxRequiredLSWidth, maxRequiredLSWidth, 'ambient', 'ambient/stars3lightspeed');
         stars3ls.anchor.setTo(0.5, 0.5);
         stars3ls.fixedToCamera = true;
-        glow = this.game.add.sprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, 'space', 'ambient/lightspeedGlow');
+        glow = this.game.add.sprite(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2, 'ambient', 'ambient/lightspeedGlow');
         glow.anchor.setTo(0.5, 0.5);
         glow.fixedToCamera = true;
         glow.scale.setTo(SCALE * 2, SCALE * 2);
 
-        var gradient = this.game.add.sprite(0, 0, 'space', 'ambient/gradient');
+        var gradient = this.game.add.sprite(0, 0, 'ambient', 'ambient/gradient');
         gradient.fixedToCamera = true;
         gradient.scale.setTo(2, 2);
         gradient.smoothed = false;
 
-        player = this.game.add.sprite(64000 / 2, 64000 / 2, 'space', 'ship/ship');
+        player = this.game.add.sprite(64000 / 2, 64000 / 2, 'entity', 'ship/ship');
         player.anchor.setTo(0.5, 0.5);
         player.smoothed = false;
         player.scale.setTo(SCALE, SCALE);
@@ -99,19 +99,19 @@ Game.Space.prototype = {
         lastY = this.game.camera.position.y;
 
         //fire = player.addChild(this.game.add.sprite(0, 20, 'space'));
-        fire = player.addChild(this.game.add.sprite(0, 20, 'fire'));
+        fire = player.addChild(this.game.add.sprite(0, 20, 'entity'));
         fire.anchor.setTo(0.5, 0.5);
         fire.smoothed = false;
         fire.scale.setTo(1, -1);
-        //fire.animations.add('on', Phaser.Animation.generateFrameNames('ship/fire', 1, 12), 20, true);
-        fire.animations.add('on', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 20, true);
+        fire.animations.add('on', Phaser.Animation.generateFrameNames('ship/fire', 1, 12), 20, true);
+        //fire.animations.add('on', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 20, true);
         //fire.animations.add('off', [12], 1, true);
 
         planets = this.game.add.group();
         //planets.enableBody = true;
         //planets.physicsBodyType = Phaser.Physics.ARCADE;
 
-        planet1 = planets.create(64000 / 2 + 200, 64000 / 2 + 200, 'space', 'planets/sand');
+        planet1 = planets.create(64000 / 2 + 200, 64000 / 2 + 200, 'entity', 'planets/sand');
         planet1.smoothed = false;
         //planet1.body.setCircle(planet1.width / 2 + planetLandRadius, -planetLandRadius, -planetLandRadius);
         planet1.scale.setTo(SCALE * 4, SCALE * 4);

@@ -25,11 +25,12 @@ Game.Preloader.prototype = {
 
         // Space
 
-        this.load.atlas('space', 'sheets/space.png', 'sheets/space.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_ARRAY);
+        this.load.atlas('ambient', 'sheets/ambient.png', 'sheets/ambient.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_ARRAY);
+        this.load.atlas('entity', 'sheets/entity.png', 'sheets/entity.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_ARRAY);
 
 
         //this.load.image('ship', 'assets/ship/ship.png');
-        this.load.spritesheet('fire', 'ship/fire.png', 7, 20);
+        //this.load.spritesheet('fire', 'ship/fire.png', 7, 20);
 
         //this.load.image('stars1', 'ambient/stars1.png');
         //this.load.image('stars2', 'ambient/stars2.png');
@@ -46,7 +47,7 @@ Game.Preloader.prototype = {
 
     create: function () {
 
-        this.game.renderer.setTexturePriority(['space']);
+        this.game.renderer.setTexturePriority(['entity', 'ambient']);
 
         this.state.start('Space');
     }
