@@ -25,8 +25,8 @@ Game.Preloader.prototype = {
 
         // Space
 
-        this.load.atlas('ambient', 'sheets/ambient.png', 'sheets/ambient.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_ARRAY);
-        this.load.atlas('entity', 'sheets/entity.png', 'sheets/entity.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_ARRAY);
+        this.load.atlas('ambient', 'sheets/ambient.png', 'sheets/ambient.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
+        this.load.atlas('entity', 'sheets/entity.png', 'sheets/entity.json', null, Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
 
 
         //this.load.image('ship', 'assets/ship/ship.png');
