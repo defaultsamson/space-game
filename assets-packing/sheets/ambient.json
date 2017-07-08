@@ -1,7 +1,6 @@
 {
-	"frames": [
-		{
-			"filename": "ambient/gradient",
+	"frames": {
+		"ambient/gradient": {
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -21,8 +20,7 @@
 				"h": 180
 			}
 		},
-		{
-			"filename": "ambient/lightspeedGlow",
+		"ambient/lightspeedGlow": {
 			"frame": {
 				"x": 322,
 				"y": 1,
@@ -42,8 +40,7 @@
 				"h": 256
 			}
 		},
-		{
-			"filename": "ambient/stars1",
+		"ambient/stars1": {
 			"frame": {
 				"x": 579,
 				"y": 1,
@@ -63,8 +60,7 @@
 				"h": 512
 			}
 		},
-		{
-			"filename": "ambient/stars2",
+		"ambient/stars2": {
 			"frame": {
 				"x": 1092,
 				"y": 1,
@@ -84,8 +80,7 @@
 				"h": 512
 			}
 		},
-		{
-			"filename": "ambient/stars3",
+		"ambient/stars3": {
 			"frame": {
 				"x": 1,
 				"y": 258,
@@ -105,8 +100,7 @@
 				"h": 512
 			}
 		},
-		{
-			"filename": "ambient/stars2lightspeed",
+		"ambient/stars2lightspeed": {
 			"frame": {
 				"x": 514,
 				"y": 514,
@@ -126,8 +120,7 @@
 				"h": 512
 			}
 		},
-		{
-			"filename": "ambient/stars3lightspeed",
+		"ambient/stars3lightspeed": {
 			"frame": {
 				"x": 1027,
 				"y": 514,
@@ -147,7 +140,7 @@
 				"h": 512
 			}
 		}
-	],
+	},
 	"meta": {
 		"app": "https://github.com/urraka/texpack",
 		"image": "ambient.png",

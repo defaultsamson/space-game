@@ -1,7 +1,6 @@
 {
-	"frames": [
-		{
-			"filename": "planets/sand",
+	"frames": {
+		"planets/sand": {
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -21,8 +20,7 @@
 				"h": 30
 			}
 		},
-		{
-			"filename": "ship/ship",
+		"ship/ship": {
 			"frame": {
 				"x": 1,
 				"y": 32,
@@ -42,8 +40,7 @@
 				"h": 23
 			}
 		},
-		{
-			"filename": "ship/fire1",
+		"ship/fire1": {
 			"frame": {
 				"x": 25,
 				"y": 32,
@@ -63,8 +60,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire2",
+		"ship/fire2": {
 			"frame": {
 				"x": 25,
 				"y": 38,
@@ -84,8 +80,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire3",
+		"ship/fire3": {
 			"frame": {
 				"x": 25,
 				"y": 44,
@@ -105,8 +100,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire4",
+		"ship/fire4": {
 			"frame": {
 				"x": 25,
 				"y": 50,
@@ -126,8 +120,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire5",
+		"ship/fire5": {
 			"frame": {
 				"x": 32,
 				"y": 1,
@@ -147,8 +140,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire6",
+		"ship/fire6": {
 			"frame": {
 				"x": 32,
 				"y": 7,
@@ -168,8 +160,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire7",
+		"ship/fire7": {
 			"frame": {
 				"x": 32,
 				"y": 13,
@@ -189,8 +180,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire8",
+		"ship/fire8": {
 			"frame": {
 				"x": 32,
 				"y": 19,
@@ -210,8 +200,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire9",
+		"ship/fire9": {
 			"frame": {
 				"x": 32,
 				"y": 25,
@@ -231,8 +220,7 @@
 				"h": 5
 			}
 		},
-		{
-			"filename": "ship/fire10",
+		"ship/fire10": {
 			"frame": {
 				"x": 46,
 				"y": 31,
@@ -252,8 +240,7 @@
 				"h": 20
 			}
 		},
-		{
-			"filename": "ship/fire11",
+		"ship/fire11": {
 			"frame": {
 				"x": 52,
 				"y": 31,
@@ -273,8 +260,7 @@
 				"h": 20
 			}
 		},
-		{
-			"filename": "ship/fire12",
+		"ship/fire12": {
 			"frame": {
 				"x": 53,
 				"y": 1,
@@ -294,7 +280,7 @@
 				"h": 20
 			}
 		}
-	],
+	},
 	"meta": {
 		"app": "https://github.com/urraka/texpack",
 		"image": "entity.png",
