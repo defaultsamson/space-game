@@ -148,73 +148,10 @@
 			}
 		},
 		{
-			"filename": "ship/ship",
+			"filename": "planets/sand",
 			"frame": {
 				"x": 514,
 				"y": 1208,
-				"w": 92,
-				"h": 92
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 92,
-				"h": 92
-			},
-			"sourceSize": {
-				"w": 92,
-				"h": 92
-			}
-		},
-		{
-			"filename": "ship/shipTurn",
-			"frame": {
-				"x": 607,
-				"y": 1208,
-				"w": 92,
-				"h": 92
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 92,
-				"h": 92
-			},
-			"sourceSize": {
-				"w": 92,
-				"h": 92
-			}
-		},
-		{
-			"filename": "ship/fire",
-			"frame": {
-				"x": 700,
-				"y": 1208,
-				"w": 20,
-				"h": 91
-			},
-			"rotated": true,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 20,
-				"h": 91
-			},
-			"sourceSize": {
-				"w": 20,
-				"h": 91
-			}
-		},
-		{
-			"filename": "planets/sand",
-			"frame": {
-				"x": 721,
-				"y": 1208,
 				"w": 30,
 				"h": 30
 			},
@@ -229,6 +166,279 @@
 			"sourceSize": {
 				"w": 30,
 				"h": 30
+			}
+		},
+		{
+			"filename": "ship/ship",
+			"frame": {
+				"x": 514,
+				"y": 1239,
+				"w": 23,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 23,
+				"h": 23
+			},
+			"sourceSize": {
+				"w": 23,
+				"h": 23
+			}
+		},
+		{
+			"filename": "ship/fire1",
+			"frame": {
+				"x": 514,
+				"y": 1263,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire2",
+			"frame": {
+				"x": 520,
+				"y": 1263,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire3",
+			"frame": {
+				"x": 526,
+				"y": 1263,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire4",
+			"frame": {
+				"x": 532,
+				"y": 1263,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire5",
+			"frame": {
+				"x": 538,
+				"y": 1239,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire6",
+			"frame": {
+				"x": 538,
+				"y": 1260,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire7",
+			"frame": {
+				"x": 538,
+				"y": 1281,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire8",
+			"frame": {
+				"x": 514,
+				"y": 1284,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire9",
+			"frame": {
+				"x": 520,
+				"y": 1284,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire10",
+			"frame": {
+				"x": 526,
+				"y": 1284,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire11",
+			"frame": {
+				"x": 532,
+				"y": 1284,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
+			}
+		},
+		{
+			"filename": "ship/fire12",
+			"frame": {
+				"x": 544,
+				"y": 1239,
+				"w": 5,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 20
 			}
 		}
 	],
