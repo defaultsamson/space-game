@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wno-invalid-offsetof -march=native -ffast-math -pthread -fdiagnostics-color=auto -O3 -DNDEBUG   CMakeFiles/SpaceGameExe.dir/main.cpp.o  -o bin/SpaceGameExe -rdynamic /home/samson/Urho3D-master/Build/lib/libUrho3D.a -ldl -lm -lrt -lGL 

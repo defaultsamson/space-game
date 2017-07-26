@@ -1,0 +1,18 @@
+[Wed Jul 26 18:00:41 2017] INFO: Opened log file Urho3D.log
+[Wed Jul 26 18:00:41 2017] INFO: Created 3 worker threads
+[Wed Jul 26 18:00:41 2017] INFO: Added resource path /home/samson/Documents/GitHub/space-game/Build/bin/Data/
+[Wed Jul 26 18:00:41 2017] INFO: Added resource path /home/samson/Documents/GitHub/space-game/Build/bin/CoreData/
+[Wed Jul 26 18:00:41 2017] INFO: Set screen mode 1280x720 windowed monitor 0 resizable
+[Wed Jul 26 18:00:41 2017] INFO: Initialized input
+[Wed Jul 26 18:00:41 2017] INFO: Initialized user interface
+[Wed Jul 26 18:00:41 2017] INFO: Initialized renderer
+[Wed Jul 26 18:00:41 2017] INFO: Set audio mode 44100 Hz stereo interpolated
+[Wed Jul 26 18:00:41 2017] INFO: Initialized engine
+[Wed Jul 26 18:00:42 2017] INFO: Keys: tab = toggle mouse, AWSD = move camera, Shift = fast mode, Esc = quit.
+201 frames in 1.0000 seconds = 200.98 fps
+[Wed Jul 26 18:00:43 2017] INFO: Keys: tab = toggle mouse, AWSD = move camera, Shift = fast mode, Esc = quit.
+200 frames in 1.0000 seconds = 199.99 fps
+[Wed Jul 26 18:00:44 2017] INFO: Keys: tab = toggle mouse, AWSD = move camera, Shift = fast mode, Esc = quit.
+200 frames in 1.0000 seconds = 199.99 fps
+[Wed Jul 26 18:00:45 2017] INFO: Keys: tab = toggle mouse, AWSD = move camera, Shift = fast mode, Esc = quit.
+200 frames in 1.0000 seconds = 199.99 fps
