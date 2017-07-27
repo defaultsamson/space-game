@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/home/samson/Urho3D/BuildMW/CMakeFiles/3.7.2/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/3.7.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/x86_64-w64-mingw32-g++ 
@@ -24,37 +24,37 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "/home/samson/Urho3D/BuildMW/CMakeFiles/3.7.2/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/3.7.2/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fb703/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fb703.dir/build.make CMakeFiles/cmTC_fb703.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fb703.dir/testCCompiler.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_fb703.dir/testCCompiler.c.obj   -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_fb703.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb703.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fb703.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_fb703.dir/objects.a @CMakeFiles/cmTC_fb703.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_fb703.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fb703.exe -Wl,--out-implib,libcmTC_fb703.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fb703.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_5909a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5909a.dir/build.make CMakeFiles/cmTC_5909a.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5909a.dir/testCCompiler.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_5909a.dir/testCCompiler.c.obj   -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_5909a.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5909a.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_5909a.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_5909a.dir/objects.a @CMakeFiles/cmTC_5909a.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_5909a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5909a.exe -Wl,--out-implib,libcmTC_5909a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_5909a.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5ced9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5ced9.dir/build.make CMakeFiles/cmTC_5ced9.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5ced9.dir/CMakeCCompilerABI.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_5ced9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_5ced9.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ced9.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_5ced9.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_5ced9.dir/objects.a @CMakeFiles/cmTC_5ced9.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc      -v -Wl,--whole-archive CMakeFiles/cmTC_5ced9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5ced9.exe -Wl,--out-implib,libcmTC_5ced9.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"/usr/bin/make" "cmTC_52e1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_52e1f.dir/build.make CMakeFiles/cmTC_52e1f.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52e1f.dir/CMakeCCompilerABI.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_52e1f.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_52e1f.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e1f.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_52e1f.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_52e1f.dir/objects.a @CMakeFiles/cmTC_52e1f.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc      -v -Wl,--whole-archive CMakeFiles/cmTC_52e1f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_52e1f.exe -Wl,--out-implib,libcmTC_52e1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/lto-wrapper
@@ -64,26 +64,26 @@ Thread model: win32
 gcc version 6.2.1 20161119 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5ced9.exe' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_5ced9.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_5ced9.dir/objects.a --no-whole-archive --out-implib libcmTC_5ced9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5ced9.exe' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52e1f.exe' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_52e1f.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_52e1f.dir/objects.a --no-whole-archive --out-implib libcmTC_52e1f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52e1f.exe' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5ced9/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5ced9.dir/build.make CMakeFiles/cmTC_5ced9.dir/build]
-  ignore line: [make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_5ced9.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_5ced9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_5ced9.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ced9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_5ced9.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_5ced9.dir/objects.a @CMakeFiles/cmTC_5ced9.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc      -v -Wl,--whole-archive CMakeFiles/cmTC_5ced9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5ced9.exe -Wl,--out-implib,libcmTC_5ced9.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_52e1f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_52e1f.dir/build.make CMakeFiles/cmTC_52e1f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_52e1f.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc     -o CMakeFiles/cmTC_52e1f.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_52e1f.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e1f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_52e1f.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_52e1f.dir/objects.a @CMakeFiles/cmTC_52e1f.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc      -v -Wl,--whole-archive CMakeFiles/cmTC_52e1f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_52e1f.exe -Wl,--out-implib,libcmTC_52e1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/lto-wrapper]
@@ -93,23 +93,23 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 6.2.1 20161119 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5ced9.exe' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_5ced9.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_5ced9.dir/objects.a --no-whole-archive --out-implib libcmTC_5ced9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52e1f.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_52e1f.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_52e1f.dir/objects.a --no-whole-archive --out-implib libcmTC_52e1f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5ced9.exe] ==> ignore
+    arg [cmTC_52e1f.exe] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_5ced9.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_52e1f.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_5ced9.dll.a] ==> ignore
+    arg [libcmTC_52e1f.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -145,19 +145,19 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e2365/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e2365.dir/build.make CMakeFiles/cmTC_e2365.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e2365.dir/feature_tests.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc    -std=c11 -o CMakeFiles/cmTC_e2365.dir/feature_tests.c.obj   -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e2365.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2365.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e2365.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_e2365.dir/objects.a @CMakeFiles/cmTC_e2365.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_e2365.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e2365.exe -Wl,--out-implib,libcmTC_e2365.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e2365.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e9a5a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9a5a.dir/build.make CMakeFiles/cmTC_e9a5a.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9a5a.dir/feature_tests.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc    -std=c11 -o CMakeFiles/cmTC_e9a5a.dir/feature_tests.c.obj   -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e9a5a.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a5a.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e9a5a.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_e9a5a.dir/objects.a @CMakeFiles/cmTC_e9a5a.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_e9a5a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e9a5a.exe -Wl,--out-implib,libcmTC_e9a5a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e9a5a.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -167,19 +167,19 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_88a06/fast"
-/usr/bin/make -f CMakeFiles/cmTC_88a06.dir/build.make CMakeFiles/cmTC_88a06.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_88a06.dir/feature_tests.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc    -std=c99 -o CMakeFiles/cmTC_88a06.dir/feature_tests.c.obj   -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.c
-Linking C executable cmTC_88a06.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88a06.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_88a06.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_88a06.dir/objects.a @CMakeFiles/cmTC_88a06.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_88a06.dir/objects.a -Wl,--no-whole-archive  -o cmTC_88a06.exe -Wl,--out-implib,libcmTC_88a06.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_88a06.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_1e176/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e176.dir/build.make CMakeFiles/cmTC_1e176.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e176.dir/feature_tests.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc    -std=c99 -o CMakeFiles/cmTC_1e176.dir/feature_tests.c.obj   -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1e176.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e176.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_1e176.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_1e176.dir/objects.a @CMakeFiles/cmTC_1e176.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_1e176.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1e176.exe -Wl,--out-implib,libcmTC_1e176.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_1e176.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,19 +189,19 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_72f63/fast"
-/usr/bin/make -f CMakeFiles/cmTC_72f63.dir/build.make CMakeFiles/cmTC_72f63.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_72f63.dir/feature_tests.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc    -std=c90 -o CMakeFiles/cmTC_72f63.dir/feature_tests.c.obj   -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.c
-Linking C executable cmTC_72f63.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72f63.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_72f63.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_72f63.dir/objects.a @CMakeFiles/cmTC_72f63.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_72f63.dir/objects.a -Wl,--no-whole-archive  -o cmTC_72f63.exe -Wl,--out-implib,libcmTC_72f63.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_72f63.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_79b52/fast"
+/usr/bin/make -f CMakeFiles/cmTC_79b52.dir/build.make CMakeFiles/cmTC_79b52.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79b52.dir/feature_tests.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc    -std=c90 -o CMakeFiles/cmTC_79b52.dir/feature_tests.c.obj   -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.c
+Linking C executable cmTC_79b52.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79b52.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_79b52.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_79b52.dir/objects.a @CMakeFiles/cmTC_79b52.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc       -Wl,--whole-archive CMakeFiles/cmTC_79b52.dir/objects.a -Wl,--no-whole-archive  -o cmTC_79b52.exe -Wl,--out-implib,libcmTC_79b52.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_79b52.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -209,34 +209,34 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5ef19/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5ef19.dir/build.make CMakeFiles/cmTC_5ef19.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5ef19.dir/testCXXCompiler.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_5ef19.dir/testCXXCompiler.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_5ef19.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ef19.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_5ef19.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_5ef19.dir/objects.a @CMakeFiles/cmTC_5ef19.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_5ef19.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5ef19.exe -Wl,--out-implib,libcmTC_5ef19.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_5ef19.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c109e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c109e.dir/build.make CMakeFiles/cmTC_c109e.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c109e.dir/testCXXCompiler.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_c109e.dir/testCXXCompiler.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c109e.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c109e.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_c109e.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_c109e.dir/objects.a @CMakeFiles/cmTC_c109e.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_c109e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c109e.exe -Wl,--out-implib,libcmTC_c109e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c109e.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7e494/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7e494.dir/build.make CMakeFiles/cmTC_7e494.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7e494.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_7e494.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_7e494.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e494.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_7e494.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_7e494.dir/objects.a @CMakeFiles/cmTC_7e494.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++      -v -Wl,--whole-archive CMakeFiles/cmTC_7e494.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7e494.exe -Wl,--out-implib,libcmTC_7e494.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"/usr/bin/make" "cmTC_15209/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15209.dir/build.make CMakeFiles/cmTC_15209.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_15209.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_15209.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_15209.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15209.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_15209.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_15209.dir/objects.a @CMakeFiles/cmTC_15209.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++      -v -Wl,--whole-archive CMakeFiles/cmTC_15209.dir/objects.a -Wl,--no-whole-archive  -o cmTC_15209.exe -Wl,--out-implib,libcmTC_15209.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/lto-wrapper
@@ -246,26 +246,26 @@ Thread model: win32
 gcc version 6.2.1 20161119 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e494.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_7e494.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_7e494.dir/objects.a --no-whole-archive --out-implib libcmTC_7e494.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e494.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_15209.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_15209.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_15209.dir/objects.a --no-whole-archive --out-implib libcmTC_15209.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_15209.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7e494/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7e494.dir/build.make CMakeFiles/cmTC_7e494.dir/build]
-  ignore line: [make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_7e494.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_7e494.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_7e494.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e494.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_7e494.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_7e494.dir/objects.a @CMakeFiles/cmTC_7e494.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++      -v -Wl,--whole-archive CMakeFiles/cmTC_7e494.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7e494.exe -Wl,--out-implib,libcmTC_7e494.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_15209/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_15209.dir/build.make CMakeFiles/cmTC_15209.dir/build]
+  ignore line: [make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_15209.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++      -o CMakeFiles/cmTC_15209.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_15209.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15209.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_15209.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_15209.dir/objects.a @CMakeFiles/cmTC_15209.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++      -v -Wl,--whole-archive CMakeFiles/cmTC_15209.dir/objects.a -Wl,--no-whole-archive  -o cmTC_15209.exe -Wl,--out-implib,libcmTC_15209.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/lto-wrapper]
@@ -275,23 +275,23 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 6.2.1 20161119 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/:/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e494.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_7e494.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_7e494.dir/objects.a --no-whole-archive --out-implib libcmTC_7e494.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_15209.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2 -m i386pep -Bdynamic -o cmTC_15209.exe /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32 -L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_15209.dir/objects.a --no-whole-archive --out-implib libcmTC_15209.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/collect2] ==> ignore
     arg [-m] ==> ignore
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7e494.exe] ==> ignore
+    arg [cmTC_15209.exe] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib/crt2.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/crtbegin.o] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/6.2-win32/../../../../x86_64-w64-mingw32/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_7e494.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_15209.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_7e494.dll.a] ==> ignore
+    arg [libcmTC_15209.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -328,19 +328,19 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c24b4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c24b4.dir/build.make CMakeFiles/cmTC_c24b4.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c24b4.dir/feature_tests.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++     -std=c++14 -o CMakeFiles/cmTC_c24b4.dir/feature_tests.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c24b4.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c24b4.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_c24b4.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_c24b4.dir/objects.a @CMakeFiles/cmTC_c24b4.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_c24b4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c24b4.exe -Wl,--out-implib,libcmTC_c24b4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c24b4.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_94287/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94287.dir/build.make CMakeFiles/cmTC_94287.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94287.dir/feature_tests.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++     -std=c++14 -o CMakeFiles/cmTC_94287.dir/feature_tests.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_94287.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94287.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_94287.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_94287.dir/objects.a @CMakeFiles/cmTC_94287.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_94287.dir/objects.a -Wl,--no-whole-archive  -o cmTC_94287.exe -Wl,--out-implib,libcmTC_94287.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_94287.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -403,19 +403,19 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_aa1a6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_aa1a6.dir/build.make CMakeFiles/cmTC_aa1a6.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_aa1a6.dir/feature_tests.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++     -std=c++11 -o CMakeFiles/cmTC_aa1a6.dir/feature_tests.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_aa1a6.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa1a6.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_aa1a6.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_aa1a6.dir/objects.a @CMakeFiles/cmTC_aa1a6.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_aa1a6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_aa1a6.exe -Wl,--out-implib,libcmTC_aa1a6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_aa1a6.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_739aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_739aa.dir/build.make CMakeFiles/cmTC_739aa.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_739aa.dir/feature_tests.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++     -std=c++11 -o CMakeFiles/cmTC_739aa.dir/feature_tests.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_739aa.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_739aa.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_739aa.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_739aa.dir/objects.a @CMakeFiles/cmTC_739aa.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_739aa.dir/objects.a -Wl,--no-whole-archive  -o cmTC_739aa.exe -Wl,--out-implib,libcmTC_739aa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_739aa.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -478,19 +478,19 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9b9f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9b9f.dir/build.make CMakeFiles/cmTC_a9b9f.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a9b9f.dir/feature_tests.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++     -std=c++98 -o CMakeFiles/cmTC_a9b9f.dir/feature_tests.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a9b9f.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9b9f.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_a9b9f.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_a9b9f.dir/objects.a @CMakeFiles/cmTC_a9b9f.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_a9b9f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a9b9f.exe -Wl,--out-implib,libcmTC_a9b9f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a9b9f.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cbae9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbae9.dir/build.make CMakeFiles/cmTC_cbae9.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cbae9.dir/feature_tests.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++     -std=c++98 -o CMakeFiles/cmTC_cbae9.dir/feature_tests.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cbae9.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbae9.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_cbae9.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_cbae9.dir/objects.a @CMakeFiles/cmTC_cbae9.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++       -Wl,--whole-archive CMakeFiles/cmTC_cbae9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cbae9.exe -Wl,--out-implib,libcmTC_cbae9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_cbae9.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -551,15 +551,15 @@ make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file d3dcompiler.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b8089/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b8089.dir/build.make CMakeFiles/cmTC_b8089.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b8089.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_b8089.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_b8089.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Run Build Command:"/usr/bin/make" "cmTC_2de04/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2de04.dir/build.make CMakeFiles/cmTC_2de04.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2de04.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_2de04.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_2de04.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
 In file included from /usr/share/mingw-w64/include/d3dcompiler.h:23:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/d3d11shader.h:138:0: warning: "INTERFACE" redefined
  #define INTERFACE ID3D11ShaderReflectionType
  
@@ -568,44 +568,44 @@ In file included from /usr/share/mingw-w64/include/windows.h:108:0,
                  from /usr/share/mingw-w64/include/d3dcommon.h:7,
                  from /usr/share/mingw-w64/include/d3d11shader.h:23,
                  from /usr/share/mingw-w64/include/d3dcompiler.h:23,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/commdlg.h:587:0: note: this is the location of the previous definition
  #define INTERFACE IPrintDialogServices
  
-Linking CXX executable cmTC_b8089.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8089.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_b8089.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_b8089.dir/objects.a @CMakeFiles/cmTC_b8089.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_b8089.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b8089.exe -Wl,--out-implib,libcmTC_b8089.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_b8089.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Linking CXX executable cmTC_2de04.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2de04.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_2de04.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_2de04.dir/objects.a @CMakeFiles/cmTC_2de04.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_2de04.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2de04.exe -Wl,--out-implib,libcmTC_2de04.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2de04.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file d3d9.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_34154/fast"
-/usr/bin/make -f CMakeFiles/cmTC_34154.dir/build.make CMakeFiles/cmTC_34154.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_34154.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_34154.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_34154.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_34154.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34154.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_34154.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_34154.dir/objects.a @CMakeFiles/cmTC_34154.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_34154.dir/objects.a -Wl,--no-whole-archive  -o cmTC_34154.exe -Wl,--out-implib,libcmTC_34154.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_34154.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_4f722/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4f722.dir/build.make CMakeFiles/cmTC_4f722.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4f722.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_4f722.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_4f722.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_4f722.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f722.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_4f722.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_4f722.dir/objects.a @CMakeFiles/cmTC_4f722.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_4f722.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4f722.exe -Wl,--out-implib,libcmTC_4f722.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_4f722.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file d3d11.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9b78e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9b78e.dir/build.make CMakeFiles/cmTC_9b78e.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9b78e.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_9b78e.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_9b78e.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Run Build Command:"/usr/bin/make" "cmTC_6a41b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a41b.dir/build.make CMakeFiles/cmTC_6a41b.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a41b.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_6a41b.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_6a41b.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:106:0: warning: "DXGI_ERROR_INVALID_CALL" redefined
  #define DXGI_ERROR_INVALID_CALL                     MAKE_DXGI_HRESULT(1)
  
@@ -613,12 +613,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3446:0: note: this is the location of the previous definition
  #define DXGI_ERROR_INVALID_CALL                 _HRESULT_TYPEDEF_(0x887A0001)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:107:0: warning: "DXGI_ERROR_NOT_FOUND" redefined
  #define DXGI_ERROR_NOT_FOUND                        MAKE_DXGI_HRESULT(2)
  
@@ -626,12 +626,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3447:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NOT_FOUND                    _HRESULT_TYPEDEF_(0x887A0002)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:108:0: warning: "DXGI_ERROR_MORE_DATA" redefined
  #define DXGI_ERROR_MORE_DATA                        MAKE_DXGI_HRESULT(3)
  
@@ -639,12 +639,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3448:0: note: this is the location of the previous definition
  #define DXGI_ERROR_MORE_DATA                    _HRESULT_TYPEDEF_(0x887A0003)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:109:0: warning: "DXGI_ERROR_UNSUPPORTED" redefined
  #define DXGI_ERROR_UNSUPPORTED                      MAKE_DXGI_HRESULT(4)
  
@@ -652,12 +652,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3449:0: note: this is the location of the previous definition
  #define DXGI_ERROR_UNSUPPORTED                  _HRESULT_TYPEDEF_(0x887A0004)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:110:0: warning: "DXGI_ERROR_DEVICE_REMOVED" redefined
  #define DXGI_ERROR_DEVICE_REMOVED                   MAKE_DXGI_HRESULT(5)
  
@@ -665,12 +665,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3450:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_REMOVED               _HRESULT_TYPEDEF_(0x887A0005)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:111:0: warning: "DXGI_ERROR_DEVICE_HUNG" redefined
  #define DXGI_ERROR_DEVICE_HUNG                      MAKE_DXGI_HRESULT(6)
  
@@ -678,12 +678,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3451:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_HUNG                  _HRESULT_TYPEDEF_(0x887A0006)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:112:0: warning: "DXGI_ERROR_DEVICE_RESET" redefined
  #define DXGI_ERROR_DEVICE_RESET                     MAKE_DXGI_HRESULT(7)
  
@@ -691,12 +691,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3452:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_RESET                 _HRESULT_TYPEDEF_(0x887A0007)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:113:0: warning: "DXGI_ERROR_WAS_STILL_DRAWING" redefined
  #define DXGI_ERROR_WAS_STILL_DRAWING                MAKE_DXGI_HRESULT(10)
  
@@ -704,12 +704,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3453:0: note: this is the location of the previous definition
  #define DXGI_ERROR_WAS_STILL_DRAWING            _HRESULT_TYPEDEF_(0x887A000A)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:114:0: warning: "DXGI_ERROR_FRAME_STATISTICS_DISJOINT" redefined
  #define DXGI_ERROR_FRAME_STATISTICS_DISJOINT        MAKE_DXGI_HRESULT(11)
  
@@ -717,12 +717,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3454:0: note: this is the location of the previous definition
  #define DXGI_ERROR_FRAME_STATISTICS_DISJOINT    _HRESULT_TYPEDEF_(0x887A000B)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:115:0: warning: "DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE" redefined
  #define DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE     MAKE_DXGI_HRESULT(12)
  
@@ -730,12 +730,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3455:0: note: this is the location of the previous definition
  #define DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE _HRESULT_TYPEDEF_(0x887A000C)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:116:0: warning: "DXGI_ERROR_DRIVER_INTERNAL_ERROR" redefined
  #define DXGI_ERROR_DRIVER_INTERNAL_ERROR            MAKE_DXGI_HRESULT(32)
  
@@ -743,12 +743,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3456:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DRIVER_INTERNAL_ERROR        _HRESULT_TYPEDEF_(0x887A0020)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:117:0: warning: "DXGI_ERROR_NONEXCLUSIVE" redefined
  #define DXGI_ERROR_NONEXCLUSIVE                     MAKE_DXGI_HRESULT(33)
  
@@ -756,12 +756,12 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3457:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NONEXCLUSIVE                 _HRESULT_TYPEDEF_(0x887A0021)
  
 In file included from /usr/share/mingw-w64/include/d3d11.h:229:0,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/dxgi.h:118:0: warning: "DXGI_ERROR_NOT_CURRENTLY_AVAILABLE" redefined
  #define DXGI_ERROR_NOT_CURRENTLY_AVAILABLE          MAKE_DXGI_HRESULT(34)
  
@@ -769,43 +769,43 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/d3d11.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3458:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NOT_CURRENTLY_AVAILABLE      _HRESULT_TYPEDEF_(0x887A0022)
  
-Linking CXX executable cmTC_9b78e.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b78e.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_9b78e.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_9b78e.dir/objects.a @CMakeFiles/cmTC_9b78e.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_9b78e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9b78e.exe -Wl,--out-implib,libcmTC_9b78e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_9b78e.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Linking CXX executable cmTC_6a41b.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a41b.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_6a41b.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_6a41b.dir/objects.a @CMakeFiles/cmTC_6a41b.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_6a41b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6a41b.exe -Wl,--out-implib,libcmTC_6a41b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_6a41b.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file ddraw.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1f048/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1f048.dir/build.make CMakeFiles/cmTC_1f048.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1f048.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_1f048.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_1f048.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_1f048.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f048.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_1f048.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_1f048.dir/objects.a @CMakeFiles/cmTC_1f048.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_1f048.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1f048.exe -Wl,--out-implib,libcmTC_1f048.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_1f048.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_95534/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95534.dir/build.make CMakeFiles/cmTC_95534.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95534.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_95534.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_95534.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_95534.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95534.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_95534.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_95534.dir/objects.a @CMakeFiles/cmTC_95534.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_95534.dir/objects.a -Wl,--no-whole-archive  -o cmTC_95534.exe -Wl,--out-implib,libcmTC_95534.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_95534.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file dsound.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6a938/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6a938.dir/build.make CMakeFiles/cmTC_6a938.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6a938.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_6a938.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_6a938.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+Run Build Command:"/usr/bin/make" "cmTC_2f196/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f196.dir/build.make CMakeFiles/cmTC_2f196.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2f196.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_2f196.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_2f196.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dsound.h:456:0: warning: "INTERFACE" redefined
  #define INTERFACE IDirectSound
  
@@ -813,43 +813,43 @@ In file included from /usr/share/mingw-w64/include/windows.h:108:0,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/objbase.h:7,
                  from /usr/share/mingw-w64/include/dsound.h:29,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/commdlg.h:587:0: note: this is the location of the previous definition
  #define INTERFACE IPrintDialogServices
  
-Linking CXX executable cmTC_6a938.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a938.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_6a938.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_6a938.dir/objects.a @CMakeFiles/cmTC_6a938.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_6a938.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6a938.exe -Wl,--out-implib,libcmTC_6a938.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_6a938.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Linking CXX executable cmTC_2f196.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f196.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_2f196.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_2f196.dir/objects.a @CMakeFiles/cmTC_2f196.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_2f196.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2f196.exe -Wl,--out-implib,libcmTC_2f196.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2f196.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file dinput.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d9611/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d9611.dir/build.make CMakeFiles/cmTC_d9611.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d9611.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_d9611.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_d9611.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_d9611.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9611.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_d9611.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_d9611.dir/objects.a @CMakeFiles/cmTC_d9611.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_d9611.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d9611.exe -Wl,--out-implib,libcmTC_d9611.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d9611.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_88df4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88df4.dir/build.make CMakeFiles/cmTC_88df4.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88df4.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_88df4.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_88df4.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_88df4.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88df4.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_88df4.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_88df4.dir/objects.a @CMakeFiles/cmTC_88df4.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_88df4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_88df4.exe -Wl,--out-implib,libcmTC_88df4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_88df4.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file dxgi.h exists passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_39062/fast"
-/usr/bin/make -f CMakeFiles/cmTC_39062.dir/build.make CMakeFiles/cmTC_39062.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_39062.dir/CheckIncludeFile.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_39062.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_39062.dir/CheckIncludeFile.cxx.obj -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+Run Build Command:"/usr/bin/make" "cmTC_55a13/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55a13.dir/build.make CMakeFiles/cmTC_55a13.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55a13.dir/CheckIncludeFile.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++    @CMakeFiles/cmTC_55a13.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_55a13.dir/CheckIncludeFile.cxx.obj -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:106:0: warning: "DXGI_ERROR_INVALID_CALL" redefined
  #define DXGI_ERROR_INVALID_CALL                     MAKE_DXGI_HRESULT(1)
  
@@ -857,11 +857,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3446:0: note: this is the location of the previous definition
  #define DXGI_ERROR_INVALID_CALL                 _HRESULT_TYPEDEF_(0x887A0001)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:107:0: warning: "DXGI_ERROR_NOT_FOUND" redefined
  #define DXGI_ERROR_NOT_FOUND                        MAKE_DXGI_HRESULT(2)
  
@@ -869,11 +869,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3447:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NOT_FOUND                    _HRESULT_TYPEDEF_(0x887A0002)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:108:0: warning: "DXGI_ERROR_MORE_DATA" redefined
  #define DXGI_ERROR_MORE_DATA                        MAKE_DXGI_HRESULT(3)
  
@@ -881,11 +881,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3448:0: note: this is the location of the previous definition
  #define DXGI_ERROR_MORE_DATA                    _HRESULT_TYPEDEF_(0x887A0003)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:109:0: warning: "DXGI_ERROR_UNSUPPORTED" redefined
  #define DXGI_ERROR_UNSUPPORTED                      MAKE_DXGI_HRESULT(4)
  
@@ -893,11 +893,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3449:0: note: this is the location of the previous definition
  #define DXGI_ERROR_UNSUPPORTED                  _HRESULT_TYPEDEF_(0x887A0004)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:110:0: warning: "DXGI_ERROR_DEVICE_REMOVED" redefined
  #define DXGI_ERROR_DEVICE_REMOVED                   MAKE_DXGI_HRESULT(5)
  
@@ -905,11 +905,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3450:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_REMOVED               _HRESULT_TYPEDEF_(0x887A0005)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:111:0: warning: "DXGI_ERROR_DEVICE_HUNG" redefined
  #define DXGI_ERROR_DEVICE_HUNG                      MAKE_DXGI_HRESULT(6)
  
@@ -917,11 +917,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3451:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_HUNG                  _HRESULT_TYPEDEF_(0x887A0006)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:112:0: warning: "DXGI_ERROR_DEVICE_RESET" redefined
  #define DXGI_ERROR_DEVICE_RESET                     MAKE_DXGI_HRESULT(7)
  
@@ -929,11 +929,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3452:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DEVICE_RESET                 _HRESULT_TYPEDEF_(0x887A0007)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:113:0: warning: "DXGI_ERROR_WAS_STILL_DRAWING" redefined
  #define DXGI_ERROR_WAS_STILL_DRAWING                MAKE_DXGI_HRESULT(10)
  
@@ -941,11 +941,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3453:0: note: this is the location of the previous definition
  #define DXGI_ERROR_WAS_STILL_DRAWING            _HRESULT_TYPEDEF_(0x887A000A)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:114:0: warning: "DXGI_ERROR_FRAME_STATISTICS_DISJOINT" redefined
  #define DXGI_ERROR_FRAME_STATISTICS_DISJOINT        MAKE_DXGI_HRESULT(11)
  
@@ -953,11 +953,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3454:0: note: this is the location of the previous definition
  #define DXGI_ERROR_FRAME_STATISTICS_DISJOINT    _HRESULT_TYPEDEF_(0x887A000B)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:115:0: warning: "DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE" redefined
  #define DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE     MAKE_DXGI_HRESULT(12)
  
@@ -965,11 +965,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3455:0: note: this is the location of the previous definition
  #define DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE _HRESULT_TYPEDEF_(0x887A000C)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:116:0: warning: "DXGI_ERROR_DRIVER_INTERNAL_ERROR" redefined
  #define DXGI_ERROR_DRIVER_INTERNAL_ERROR            MAKE_DXGI_HRESULT(32)
  
@@ -977,11 +977,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3456:0: note: this is the location of the previous definition
  #define DXGI_ERROR_DRIVER_INTERNAL_ERROR        _HRESULT_TYPEDEF_(0x887A0020)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:117:0: warning: "DXGI_ERROR_NONEXCLUSIVE" redefined
  #define DXGI_ERROR_NONEXCLUSIVE                     MAKE_DXGI_HRESULT(33)
  
@@ -989,11 +989,11 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3457:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NONEXCLUSIVE                 _HRESULT_TYPEDEF_(0x887A0021)
  
-In file included from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
+In file included from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:0:
 /usr/share/mingw-w64/include/dxgi.h:118:0: warning: "DXGI_ERROR_NOT_CURRENTLY_AVAILABLE" redefined
  #define DXGI_ERROR_NOT_CURRENTLY_AVAILABLE          MAKE_DXGI_HRESULT(34)
  
@@ -1001,31 +1001,31 @@ In file included from /usr/share/mingw-w64/include/winbase.h:2377:0,
                  from /usr/share/mingw-w64/include/windows.h:70,
                  from /usr/share/mingw-w64/include/rpc.h:16,
                  from /usr/share/mingw-w64/include/dxgi.h:7,
-                 from /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+                 from /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
 /usr/share/mingw-w64/include/winerror.h:3458:0: note: this is the location of the previous definition
  #define DXGI_ERROR_NOT_CURRENTLY_AVAILABLE      _HRESULT_TYPEDEF_(0x887A0022)
  
-Linking CXX executable cmTC_39062.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39062.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_39062.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_39062.dir/objects.a @CMakeFiles/cmTC_39062.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_39062.dir/objects.a -Wl,--no-whole-archive  -o cmTC_39062.exe -Wl,--out-implib,libcmTC_39062.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_39062.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Linking CXX executable cmTC_55a13.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a13.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_55a13.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_55a13.dir/objects.a @CMakeFiles/cmTC_55a13.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_55a13.dir/objects.a -Wl,--no-whole-archive  -o cmTC_55a13.exe -Wl,--out-implib,libcmTC_55a13.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_55a13.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 
 Determining if files windows.h;xinput.h exist passed with the following output:
-Change Dir: /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp
+Change Dir: /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fbfc0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fbfc0.dir/build.make CMakeFiles/cmTC_fbfc0.dir/build
-make[1]: Entering directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fbfc0.dir/CheckIncludeFiles.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   @CMakeFiles/cmTC_fbfc0.dir/includes_C.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_fbfc0.dir/CheckIncludeFiles.c.obj   -c /home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
-Linking C executable cmTC_fbfc0.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbfc0.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fbfc0.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_fbfc0.dir/objects.a @CMakeFiles/cmTC_fbfc0.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_fbfc0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fbfc0.exe -Wl,--out-implib,libcmTC_fbfc0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fbfc0.dir/linklibs.rsp
-make[1]: Leaving directory '/home/samson/Urho3D/BuildMW/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fe246/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe246.dir/build.make CMakeFiles/cmTC_fe246.dir/build
+make[1]: Entering directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe246.dir/CheckIncludeFiles.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   @CMakeFiles/cmTC_fe246.dir/includes_C.rsp -O3 -DNDEBUG   -o CMakeFiles/cmTC_fe246.dir/CheckIncludeFiles.c.obj   -c /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_fe246.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe246.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fe246.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_fe246.dir/objects.a @CMakeFiles/cmTC_fe246.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc     -O3 -DNDEBUG     -Wl,--whole-archive CMakeFiles/cmTC_fe246.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fe246.exe -Wl,--out-implib,libcmTC_fe246.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fe246.dir/linklibs.rsp
+make[1]: Leaving directory '/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/CMakeTmp'
 
 

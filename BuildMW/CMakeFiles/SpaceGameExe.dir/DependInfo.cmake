@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/samson/Urho3D/main.cpp" "/home/samson/Urho3D/BuildMW/CMakeFiles/SpaceGameExe.dir/main.cpp.obj"
+  "/home/samson/Documents/GitHub/space-game/SpaceGame.cpp" "/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

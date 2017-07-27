@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samson/Urho3D
+CMAKE_SOURCE_DIR = /home/samson/Documents/GitHub/space-game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samson/Urho3D/BuildMW
+CMAKE_BINARY_DIR = /home/samson/Documents/GitHub/space-game/BuildMW
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SpaceGameExe.dir/depend.make
@@ -57,52 +57,52 @@ include CMakeFiles/SpaceGameExe.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SpaceGameExe.dir/flags.make
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.obj: CMakeFiles/SpaceGameExe.dir/flags.make
-CMakeFiles/SpaceGameExe.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samson/Urho3D/BuildMW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceGameExe.dir/main.cpp.obj"
-	/usr/bin/x86_64-w64-mingw32-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceGameExe.dir/main.cpp.obj -c /home/samson/Urho3D/main.cpp
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: CMakeFiles/SpaceGameExe.dir/flags.make
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: ../SpaceGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj"
+	/usr/bin/x86_64-w64-mingw32-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj -c /home/samson/Documents/GitHub/space-game/SpaceGame.cpp
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceGameExe.dir/main.cpp.i"
-	/usr/bin/x86_64-w64-mingw32-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samson/Urho3D/main.cpp > CMakeFiles/SpaceGameExe.dir/main.cpp.i
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.i"
+	/usr/bin/x86_64-w64-mingw32-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/samson/Documents/GitHub/space-game/SpaceGame.cpp > CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.i
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceGameExe.dir/main.cpp.s"
-	/usr/bin/x86_64-w64-mingw32-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samson/Urho3D/main.cpp -o CMakeFiles/SpaceGameExe.dir/main.cpp.s
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.s"
+	/usr/bin/x86_64-w64-mingw32-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/samson/Documents/GitHub/space-game/SpaceGame.cpp -o CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.s
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.obj.requires:
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.requires:
 
-.PHONY : CMakeFiles/SpaceGameExe.dir/main.cpp.obj.requires
+.PHONY : CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.requires
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.obj.provides: CMakeFiles/SpaceGameExe.dir/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles/SpaceGameExe.dir/build.make CMakeFiles/SpaceGameExe.dir/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/SpaceGameExe.dir/main.cpp.obj.provides
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.provides: CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.requires
+	$(MAKE) -f CMakeFiles/SpaceGameExe.dir/build.make CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.provides.build
+.PHONY : CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.provides
 
-CMakeFiles/SpaceGameExe.dir/main.cpp.obj.provides.build: CMakeFiles/SpaceGameExe.dir/main.cpp.obj
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.provides.build: CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj
 
 
 # Object files for target SpaceGameExe
 SpaceGameExe_OBJECTS = \
-"CMakeFiles/SpaceGameExe.dir/main.cpp.obj"
+"CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj"
 
 # External object files for target SpaceGameExe
 SpaceGameExe_EXTERNAL_OBJECTS =
 
-bin/SpaceGameExe.exe: CMakeFiles/SpaceGameExe.dir/main.cpp.obj
+bin/SpaceGameExe.exe: CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj
 bin/SpaceGameExe.exe: CMakeFiles/SpaceGameExe.dir/build.make
 bin/SpaceGameExe.exe: /home/samson/Urho3D-master/BuildMW/lib/libUrho3D.a
 bin/SpaceGameExe.exe: CMakeFiles/SpaceGameExe.dir/linklibs.rsp
 bin/SpaceGameExe.exe: CMakeFiles/SpaceGameExe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samson/Urho3D/BuildMW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/SpaceGameExe.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/SpaceGameExe.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceGameExe.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/x86_64-w64-mingw32-strip /home/samson/Urho3D/BuildMW/bin/SpaceGameExe.exe
+	/usr/bin/x86_64-w64-mingw32-strip /home/samson/Documents/GitHub/space-game/BuildMW/bin/SpaceGameExe.exe
 
 # Rule to build all files generated by this target.
 CMakeFiles/SpaceGameExe.dir/build: bin/SpaceGameExe.exe
 
 .PHONY : CMakeFiles/SpaceGameExe.dir/build
 
-CMakeFiles/SpaceGameExe.dir/requires: CMakeFiles/SpaceGameExe.dir/main.cpp.obj.requires
+CMakeFiles/SpaceGameExe.dir/requires: CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj.requires
 
 .PHONY : CMakeFiles/SpaceGameExe.dir/requires
 
@@ -111,6 +111,6 @@ CMakeFiles/SpaceGameExe.dir/clean:
 .PHONY : CMakeFiles/SpaceGameExe.dir/clean
 
 CMakeFiles/SpaceGameExe.dir/depend:
-	cd /home/samson/Urho3D/BuildMW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samson/Urho3D /home/samson/Urho3D /home/samson/Urho3D/BuildMW /home/samson/Urho3D/BuildMW /home/samson/Urho3D/BuildMW/CMakeFiles/SpaceGameExe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samson/Documents/GitHub/space-game/BuildMW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samson/Documents/GitHub/space-game /home/samson/Documents/GitHub/space-game /home/samson/Documents/GitHub/space-game/BuildMW /home/samson/Documents/GitHub/space-game/BuildMW /home/samson/Documents/GitHub/space-game/BuildMW/CMakeFiles/SpaceGameExe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SpaceGameExe.dir/depend
 

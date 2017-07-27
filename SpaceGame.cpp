@@ -96,7 +96,7 @@ public:
         
         // Get sprite
         Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
-
+        
         /*
         // Let's use the default style that comes with Urho3D.
         GetSubsystem<UI>()->GetRoot()->SetDefaultStyle(cache->GetResource<XMLFile>("UI/DefaultStyle.xml"));
@@ -181,12 +181,14 @@ public:
         // Not 100% of the purpose behind this
         Graphics* graphics = GetSubsystem<Graphics>();
         camera->SetOrthoSize((float)graphics->GetHeight() * PIXEL_SIZE);
-
+        
 
 
 
         SharedPtr<Node> spriteNode(scene_->CreateChild("StaticSprite2D"));
+        //spriteNode->SetScale(1);
         spriteNode->SetPosition(Vector3(0, 0, 0.0f));
+        spriteNode->SetRotation2D(45);
 
         StaticSprite2D* staticSprite = spriteNode->CreateComponent<StaticSprite2D>();
         // Set random color
@@ -195,6 +197,7 @@ public:
         //staticSprite->SetBlendMode(BLEND_ALPHA);
         // Set sprite
         staticSprite->SetSprite(shipSprite);
+        //staticSprite->SetScale(5);
 
         // Set move speed
         //spriteNode->SetVar(VAR_MOVESPEED, Vector3(Random(-2.0f, 2.0f), Random(-2.0f, 2.0f), 0.0f));
