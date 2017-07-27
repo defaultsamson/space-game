@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SpaceGameExe.dir/main.cpp.o"
+  "CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o"
   "bin/SpaceGameExe.pdb"
   "bin/SpaceGameExe"
 )

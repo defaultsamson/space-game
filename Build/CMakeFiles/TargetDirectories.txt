@@ -1,7 +1,7 @@
-/home/samson/Urho3D/Build/CMakeFiles/install/strip.dir
-/home/samson/Urho3D/Build/CMakeFiles/install/local.dir
-/home/samson/Urho3D/Build/CMakeFiles/SpaceGameExe.dir
-/home/samson/Urho3D/Build/CMakeFiles/edit_cache.dir
-/home/samson/Urho3D/Build/CMakeFiles/rebuild_cache.dir
-/home/samson/Urho3D/Build/CMakeFiles/install.dir
-/home/samson/Urho3D/Build/CMakeFiles/list_install_components.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/install/strip.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/install/local.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/SpaceGameExe.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/edit_cache.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/rebuild_cache.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/install.dir
+/home/samson/Documents/GitHub/space-game/Build/CMakeFiles/list_install_components.dir

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samson/Urho3D
+CMAKE_SOURCE_DIR = /home/samson/Documents/GitHub/space-game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samson/Urho3D/Build
+CMAKE_BINARY_DIR = /home/samson/Documents/GitHub/space-game/Build
 
 #=============================================================================
 # Target rules for target CMakeFiles/SpaceGameExe.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/samson/Urho3D/Build
 CMakeFiles/SpaceGameExe.dir/all:
 	$(MAKE) -f CMakeFiles/SpaceGameExe.dir/build.make CMakeFiles/SpaceGameExe.dir/depend
 	$(MAKE) -f CMakeFiles/SpaceGameExe.dir/build.make CMakeFiles/SpaceGameExe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/samson/Urho3D/Build/CMakeFiles --progress-num=1,2 "Built target SpaceGameExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/samson/Documents/GitHub/space-game/Build/CMakeFiles --progress-num=1,2 "Built target SpaceGameExe"
 .PHONY : CMakeFiles/SpaceGameExe.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/SpaceGameExe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SpaceGameExe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/samson/Urho3D/Build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samson/Documents/GitHub/space-game/Build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SpaceGameExe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/samson/Urho3D/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samson/Documents/GitHub/space-game/Build/CMakeFiles 0
 .PHONY : CMakeFiles/SpaceGameExe.dir/rule
 
 # Convenience name for target.
