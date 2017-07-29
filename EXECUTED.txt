@@ -1,0 +1,2 @@
+./cmake_generic.sh Build -DURHO3D_HOME=~/Urho3D-master/Build
+./cmake_mingw.sh BuildMW -DURHO3D_HOME=~/Urho3D-master/BuildMW
