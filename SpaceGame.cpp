@@ -1,5 +1,6 @@
 #include <string>
 #include <sstream>
+#include <cmath>
 
 #include <Urho3D/Core/CoreEvents.h>
 #include <Urho3D/Engine/Application.h>
@@ -53,6 +54,9 @@ public:
     const float PPM = 100.0F; // pixels per meter
     const float MPP = 1.0F / PPM; // meters per pixel
     
+    const float SHIP_FORCE = 10;
+    const float ANGULAR_SHIP_FORCE = sqrt(SHIP_FORCE * SHIP_FORCE / 2);
+    
     int framecount_;
     float time_;
     //SharedPtr<Text> text_;
@@ -60,8 +64,14 @@ public:
     //SharedPtr<Node> boxNode_;
     SharedPtr<Node> cameraNode_;
     
+    RigidBody2D* shipBody_;
     SharedPtr<Node> shipNode_;
     PhysicsWorld2D* world;
+    
+    SharedPtr<Node> stars_;
+    SharedPtr<Node> stars1_;
+    SharedPtr<Node> stars2_;
+    SharedPtr<Node> stars3_;
     
     //static const StringHash VAR_MOVESPEED("MoveSpeed");
     //static const StringHash VAR_ROTATESPEED("RotateSpeed");
@@ -112,6 +122,9 @@ public:
         
         // Get sprite
         Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
+        //Sprite2D* stars1Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars1.png");
+        //Sprite2D* stars2Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars2.png");
+        Sprite2D* stars3Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars3.png");
         
         /*
         // Let's use the default style that comes with Urho3D.
@@ -147,6 +160,9 @@ public:
         scene_->CreateComponent<Octree>();
         // Let's add an additional scene component for fun.
         scene_->CreateComponent<DebugRenderer>();
+
+        // Sets background colour
+        GetSubsystem<Renderer>()->GetDefaultZone()->SetFogColor(Color(0.1289F, 0.1016F, 0.1367F)); // #211a23
 
         /*
         // Let's put some sky in there.
@@ -211,15 +227,16 @@ public:
         
         
         shipNode_ = scene_->CreateChild("Ship");
-        //spriteNode->SetScale(1);
+        //shipNode_->SetScale(10);
         shipNode_->SetPosition(Vector3(0, 0.0F, 0.0f));
         
-        // Create rigid body
-        RigidBody2D* body = shipNode_->CreateComponent<RigidBody2D>();
-        body->SetBodyType(BT_KINEMATIC); // BT_DYNAMIC
-
         StaticSprite2D* staticSprite = shipNode_->CreateComponent<StaticSprite2D>();
         staticSprite->SetSprite(shipSprite);
+        staticSprite->SetBlendMode(BLEND_ALPHA);
+        
+        // Create rigid body
+        shipBody_ = shipNode_->CreateComponent<RigidBody2D>();
+        shipBody_->SetBodyType(BT_DYNAMIC); // BT_DYNAMIC
         
         // Create box
         CollisionBox2D* box = shipNode_->CreateComponent<CollisionBox2D>();
@@ -232,9 +249,17 @@ public:
         // Set density
         box->SetDensity(1.0f);
         // Set friction
-        box->SetFriction(0.5f);
+        box->SetFriction(1.0f);
         // Set restitution
         box->SetRestitution(0.1f);
+        
+        
+        stars_ = scene_->CreateChild("Stars");
+        stars3_ = stars_->CreateChild("Stars3");
+        StaticSprite2D* staticSprite2 = stars3_->CreateComponent<StaticSprite2D>();
+        staticSprite2->SetSprite(stars3Sprite);
+        staticSprite2->SetBlendMode(BLEND_ALPHA);
+        
         
         // Set random color
         //staticSprite->SetColor(Color(Random(1.0f), Random(1.0f), Random(1.0f), 1.0f));
@@ -448,35 +473,59 @@ public:
         if (right && up) 
         {
             shipNode_->SetRotation2D(315);
+            shipBody_->ApplyForceToCenter(Vector2(ANGULAR_SHIP_FORCE, ANGULAR_SHIP_FORCE), true);
         }
         else if (right && down) 
         {
             shipNode_->SetRotation2D(225);
+            shipBody_->ApplyForceToCenter(Vector2(ANGULAR_SHIP_FORCE, -ANGULAR_SHIP_FORCE), true);
         }
         else if (left && down) 
         {
             shipNode_->SetRotation2D(135);
+            shipBody_->ApplyForceToCenter(Vector2(-ANGULAR_SHIP_FORCE, -ANGULAR_SHIP_FORCE), true);
         }
         else if (left && up) 
         {
             shipNode_->SetRotation2D(45);
+            shipBody_->ApplyForceToCenter(Vector2(-ANGULAR_SHIP_FORCE, ANGULAR_SHIP_FORCE), true);
         }
         else if (up) 
         {
             shipNode_->SetRotation2D(0);
+            shipBody_->ApplyForceToCenter(Vector2(0, SHIP_FORCE), true);
         }
         else if (right) 
         {
             shipNode_->SetRotation2D(270);
+            shipBody_->ApplyForceToCenter(Vector2(SHIP_FORCE, 0), true);
         }
         else if (down) 
         {
             shipNode_->SetRotation2D(180);
+            shipBody_->ApplyForceToCenter(Vector2(0, -SHIP_FORCE), true);
         }
         else if (left) 
         {
             shipNode_->SetRotation2D(90);
+            shipBody_->ApplyForceToCenter(Vector2(-SHIP_FORCE, 0), true);
         }
+
+
+        /*
+        std::string str;
+            str.append("ship velocity: ");
+            
+            {
+                std::ostringstream ss;
+                ss << shipBody_->GetLinearVelocity().x_;
+                std::string s(ss.str());
+                str.append(s.substr(0,6));
+            }
+            
+            String s(str.c_str(),str.size());
+            URHO3D_LOGINFO(s);
+            */
 
         /*
         // Read WASD keys and move the camera scene node to the corresponding direction if they are pressed
@@ -510,6 +559,10 @@ public:
     {
         // We really don't have anything useful to do here for this example.
         // Probably shouldn't be subscribing to events we don't care about.
+        
+        // Update camera to follow the ship
+        cameraNode_->SetPosition(shipNode_->GetPosition());
+        //stars_->SetPosition(shipNode_->GetPosition());
     }
     /**
     * If you have any details you want to change before the viewport is
@@ -519,8 +572,7 @@ public:
     */
     void HandleRenderUpdate(StringHash eventType, VariantMap & eventData)
     {
-        // Update camera to follow the ship
-        cameraNode_->SetPosition(shipNode_->GetPosition());
+        
     }
     /**
     * After everything is rendered, there might still be things you wish
