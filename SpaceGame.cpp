@@ -122,8 +122,8 @@ public:
         
         // Get sprite
         Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
-        //Sprite2D* stars1Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars1.png");
-        //Sprite2D* stars2Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars2.png");
+        Sprite2D* stars1Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars1.png");
+        Sprite2D* stars2Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars2.png");
         Sprite2D* stars3Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars3.png");
         
         /*
@@ -226,40 +226,59 @@ public:
         world->SetGravity(Vector2(0.0F, 0.0F));
         
         
-        shipNode_ = scene_->CreateChild("Ship");
-        //shipNode_->SetScale(10);
-        shipNode_->SetPosition(Vector3(0, 0.0F, 0.0f));
-        
-        StaticSprite2D* staticSprite = shipNode_->CreateComponent<StaticSprite2D>();
-        staticSprite->SetSprite(shipSprite);
-        staticSprite->SetBlendMode(BLEND_ALPHA);
-        
-        // Create rigid body
-        shipBody_ = shipNode_->CreateComponent<RigidBody2D>();
-        shipBody_->SetBodyType(BT_DYNAMIC); // BT_DYNAMIC
-        
-        // Create box
-        CollisionBox2D* box = shipNode_->CreateComponent<CollisionBox2D>();
-        int shipHeight = 92;
-        int shipImageHeight = 128;
-        // Set size
-        box->SetSize(Vector2(60 * MPP, shipHeight * MPP));
-        // Set size
-        box->SetCenter(Vector2(0.0f, ((shipHeight - shipImageHeight) / 2) * MPP));
-        // Set density
-        box->SetDensity(1.0f);
-        // Set friction
-        box->SetFriction(1.0f);
-        // Set restitution
-        box->SetRestitution(0.1f);
-        
-        
         stars_ = scene_->CreateChild("Stars");
-        stars3_ = stars_->CreateChild("Stars3");
-        StaticSprite2D* staticSprite2 = stars3_->CreateComponent<StaticSprite2D>();
-        staticSprite2->SetSprite(stars3Sprite);
-        staticSprite2->SetBlendMode(BLEND_ALPHA);
+        {
+            stars3_ = stars_->CreateChild("Stars3");
+            StaticSprite2D* staticSprite = stars3_->CreateComponent<StaticSprite2D>();
+            staticSprite->SetLayer(0);
+            staticSprite->SetSprite(stars3Sprite);
+            staticSprite->SetBlendMode(BLEND_ALPHA);
+        }
+        {
+            stars2_ = stars_->CreateChild("Stars2");
+            StaticSprite2D* staticSprite = stars2_->CreateComponent<StaticSprite2D>();
+            staticSprite->SetLayer(0);
+            staticSprite->SetSprite(stars2Sprite);
+            staticSprite->SetBlendMode(BLEND_ALPHA);
+        }
+        {
+            stars1_ = stars_->CreateChild("Stars1");
+            StaticSprite2D* staticSprite = stars1_->CreateComponent<StaticSprite2D>();
+            staticSprite->SetLayer(0);
+            staticSprite->SetSprite(stars1Sprite);
+            staticSprite->SetBlendMode(BLEND_ALPHA);
+        }
         
+        
+        {
+            shipNode_ = scene_->CreateChild("Ship");
+            //shipNode_->SetScale(10);
+            shipNode_->SetPosition(Vector3(0, 0.0F, 0.0f));
+
+            StaticSprite2D* staticSprite = shipNode_->CreateComponent<StaticSprite2D>();
+            staticSprite->SetLayer(1);
+            staticSprite->SetSprite(shipSprite);
+            staticSprite->SetBlendMode(BLEND_ALPHA);
+
+            // Create rigid body
+            shipBody_ = shipNode_->CreateComponent<RigidBody2D>();
+            shipBody_->SetBodyType(BT_DYNAMIC); // BT_DYNAMIC
+
+            // Create box
+            CollisionBox2D* box = shipNode_->CreateComponent<CollisionBox2D>();
+            int shipHeight = 92;
+            int shipImageHeight = 128;
+            // Set size
+            box->SetSize(Vector2(60 * MPP, shipHeight * MPP));
+            // Set size
+            box->SetCenter(Vector2(0.0f, ((shipHeight - shipImageHeight) / 2) * MPP));
+            // Set density
+            box->SetDensity(1.0f);
+            // Set friction
+            box->SetFriction(1.0f);
+            // Set restitution
+            box->SetRestitution(0.1f);
+        }
         
         // Set random color
         //staticSprite->SetColor(Color(Random(1.0f), Random(1.0f), Random(1.0f), 1.0f));
@@ -435,30 +454,6 @@ public:
             time_=0;
         }
 
-        /*
-        // Rotate the box thingy.
-        // A much nicer way of doing this would be with a LogicComponent.
-        // With LogicComponents it is easy to control things like movement
-        // and animation from some IDE, console or just in game.
-        // Alas, it is out of the scope for our simple example.
-        boxNode_->Rotate(Quaternion(8*timeStep,16*timeStep,0));
-
-        if(!GetSubsystem<Input>()->IsMouseVisible())
-        {
-            // Use this frame's mouse motion to adjust camera node yaw and pitch. Clamp the pitch between -90 and 90 degrees
-            IntVector2 mouseMove=input->GetMouseMove();
-            static float yaw_=0;
-            static float pitch_=0;
-            yaw_+=MOUSE_SENSITIVITY*mouseMove.x_;
-            pitch_+=MOUSE_SENSITIVITY*mouseMove.y_;
-            pitch_=Clamp(pitch_,-90.0f,90.0f);
-            // Reset rotation and set yaw and pitch again
-            cameraNode_->SetDirection(Vector3::FORWARD);
-            cameraNode_->Yaw(yaw_);
-            cameraNode_->Pitch(pitch_);
-        }
-        */
-
         // Do not move if the UI has a focused element (the console)
         if (GetSubsystem<UI>()->GetFocusElement())
             return;
@@ -514,29 +509,17 @@ public:
 
         /*
         std::string str;
-            str.append("ship velocity: ");
+        str.append("ship velocity: ");
+              
+        {
+            std::ostringstream ss;
+            ss << shipBody_->GetLinearVelocity().x_;
+            std::string s(ss.str());
+            str.append(s.substr(0,6));
+        }
             
-            {
-                std::ostringstream ss;
-                ss << shipBody_->GetLinearVelocity().x_;
-                std::string s(ss.str());
-                str.append(s.substr(0,6));
-            }
-            
-            String s(str.c_str(),str.size());
-            URHO3D_LOGINFO(s);
-            */
-
-        /*
-        // Read WASD keys and move the camera scene node to the corresponding direction if they are pressed
-        if (input->GetKeyDown(KEY_W))
-            cameraNode_->Translate(Vector3::UP * MOVE_SPEED * timeStep);
-        if (input->GetKeyDown(KEY_S))
-            cameraNode_->Translate(Vector3::DOWN * MOVE_SPEED * timeStep);
-        if (input->GetKeyDown(KEY_A))
-            cameraNode_->Translate(Vector3::LEFT * MOVE_SPEED * timeStep);
-        if (input->GetKeyDown(KEY_D))
-            cameraNode_->Translate(Vector3::RIGHT * MOVE_SPEED * timeStep);
+        String s(str.c_str(),str.size());
+        URHO3D_LOGINFO(s);
         */
 
         if (input->GetKeyDown(KEY_PAGEUP))
@@ -551,19 +534,36 @@ public:
             camera->SetZoom(camera->GetZoom() * 0.99f);
         }
     }
+    
     /**
     * Anything in the non-rendering logic that requires a second pass,
     * it might be well suited to be handled here.
     */
     void HandlePostUpdate(StringHash eventType,VariantMap& eventData)
     {
-        // We really don't have anything useful to do here for this example.
-        // Probably shouldn't be subscribing to events we don't care about.
+        // Update camera and stars to follow the ship
+        float lastX = cameraNode_->GetPosition().x_;
+        float lastY = cameraNode_->GetPosition().y_;
         
-        // Update camera to follow the ship
         cameraNode_->SetPosition(shipNode_->GetPosition());
-        //stars_->SetPosition(shipNode_->GetPosition());
+        stars_->SetPosition(shipNode_->GetPosition());
+        
+        float changeX = cameraNode_->GetPosition().x_ - lastX;
+        float changeY = cameraNode_->GetPosition().y_ - lastY;
+        
+        float x3 = stars3_->GetPosition().x_ - changeX + (changeX / 1.4F);
+        float y3 = stars3_->GetPosition().y_ - changeY + (changeY / 1.4F);
+        stars3_->SetPosition2D(Vector2(x3, y3));
+        
+        float x2 = stars2_->GetPosition().x_ - changeX + (changeX / 1.3F);
+        float y2 = stars2_->GetPosition().y_ - changeY + (changeY / 1.3F);
+        stars2_->SetPosition2D(Vector2(x2, y2));
+        
+        float x1 = stars1_->GetPosition().x_ - changeX + (changeX / 1.2F);
+        float y1 = stars1_->GetPosition().y_ - changeY + (changeY / 1.2F);
+        stars1_->SetPosition2D(Vector2(x1, y1));
     }
+    
     /**
     * If you have any details you want to change before the viewport is
     * rendered, try putting it here.
@@ -584,7 +584,7 @@ public:
     {
         // We could draw some debuggy looking thing for the octree.
         //scene_->GetComponent<Octree>()->DrawDebugGeometry(true);
-        world->DrawDebugGeometry();
+        // world->DrawDebugGeometry();
     }
     /**
     * All good things must come to an end.
