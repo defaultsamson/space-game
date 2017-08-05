@@ -34,6 +34,9 @@ using namespace Urho3D;
 class MyApp : public Application
 {
 public:
+
+    bool debug = false;
+
     const float PPM = 100.0F; // pixels per meter
     const float MPP = 1.0F / PPM; // meters per pixel
     
@@ -235,10 +238,13 @@ public:
         
         {
             shipNode_ = scene_->CreateChild("Ship");
-            //shipNode_->SetScale(10);
             shipNode_->SetPosition(Vector3(0, 0.0F, 0.0f));
 
-            StaticSprite2D* staticSprite = shipNode_->CreateComponent<StaticSprite2D>();
+            int shipScale = 4;
+            Node* shipSpriteNode_ = shipNode_->CreateChild("ShipSprite");
+            shipSpriteNode_->SetScale(4);
+            
+            StaticSprite2D* staticSprite = shipSpriteNode_->CreateComponent<StaticSprite2D>();
             staticSprite->SetLayer(1);
             staticSprite->SetSprite(shipSprite);
             staticSprite->SetBlendMode(BLEND_ALPHA);
@@ -249,8 +255,8 @@ public:
 
             // Create box
             CollisionBox2D* box = shipNode_->CreateComponent<CollisionBox2D>();
-            int shipHeight = 92;
-            int shipImageHeight = 128;
+            int shipHeight = 23 * shipScale;
+            int shipImageHeight = 32 * shipScale;
             // Set size
             box->SetSize(Vector2(60 * MPP, shipHeight * MPP));
             // Set size
@@ -327,6 +333,9 @@ public:
         // Set up a viewport to the Renderer subsystem so that the 3D scene can be seen
         SharedPtr<Viewport> viewport(new Viewport(context_, scene_, cameraNode_->GetComponent<Camera>()));
         renderer->SetViewport(0, viewport);
+        
+        GetSubsystem<Input>()->SetMouseVisible(true);
+        GetSubsystem<Input>()->SetMouseGrabbed(false);
 
         // We subscribe to the events we'd like to handle.
         // In this example we will be showing what most of them do,
@@ -376,6 +385,8 @@ public:
             engine_->Exit();
         if (key == KEY_F11)
             GetSubsystem<Graphics>()->ToggleFullscreen();
+        if (key == KEY_F10)
+            debug = !debug;
 
         if(key==KEY_TAB)    // toggle mouse cursor when pressing tab
         {
@@ -489,7 +500,6 @@ public:
             shipBody_->ApplyForceToCenter(Vector2(-SHIP_FORCE, 0), true);
         }
 
-
         /*
         std::string str;
         str.append("ship velocity: ");
@@ -567,7 +577,7 @@ public:
     {
         // We could draw some debuggy looking thing for the octree.
         //scene_->GetComponent<Octree>()->DrawDebugGeometry(true);
-        // world->DrawDebugGeometry();
+        if (debug) world->DrawDebugGeometry();
     }
     /**
     * All good things must come to an end.

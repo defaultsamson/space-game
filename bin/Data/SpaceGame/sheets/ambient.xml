@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with TexPack https://github.com/urraka/texpack -->
+<TextureAtlas imagePath="ambient.png" width="1540" height="514">
+  <SubTexture name="stars1" x="1" y="1" width="512" height="512"></SubTexture>
+  <SubTexture name="stars2" x="514" y="1" width="512" height="512"></SubTexture>
+  <SubTexture name="stars3" x="1027" y="1" width="512" height="512"></SubTexture>
+</TextureAtlas>
