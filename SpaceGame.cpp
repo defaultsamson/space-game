@@ -57,7 +57,7 @@ public:
     
     const int starsSize = 512;
     const int starsScale = 2;
-    const int netStarSize = starsSize * starsScale * MPP;
+    const float netStarSize = starsSize * starsScale * MPP;
     SharedPtr<Node> stars_;
     SharedPtr<Node> stars1_;
     SharedPtr<Node> stars2_;
