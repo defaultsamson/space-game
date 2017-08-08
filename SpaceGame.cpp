@@ -57,7 +57,7 @@ public:
     
     const int starsSize = 512;
     const int starsScale = 2;
-    const int netStarSize = starsSize * starsScale;
+    const int netStarSize = starsSize * starsScale * MPP;
     SharedPtr<Node> stars_;
     SharedPtr<Node> stars1_;
     SharedPtr<Node> stars2_;
@@ -213,7 +213,8 @@ public:
         world->SetDrawCenterOfMass(true);*/
         world->SetGravity(Vector2(0.0F, 0.0F));
         
-        
+        // Creates stars. 
+        // 3 layers of stars, each layer tiled in a grid (hence the nested for loops)
         stars_ = scene_->CreateChild("Stars");
         {
             stars1_ = stars_->CreateChild("Stars1");
@@ -258,6 +259,7 @@ public:
             }
         }
         
+        // Creates the player
         {
             shipNode_ = scene_->CreateChild("Ship");
             shipNode_->SetPosition(Vector3(0, 0.0F, 0.0f));
@@ -542,33 +544,38 @@ public:
     */
     void HandlePostUpdate(StringHash eventType,VariantMap& eventData)
     {
-        // Update camera and stars to follow the ship
         float lastX = cameraNode_->GetPosition().x_;
         float lastY = cameraNode_->GetPosition().y_;
         
+        // Camera and main stars node follow the ship
         cameraNode_->SetPosition(shipNode_->GetPosition());
         stars_->SetPosition(shipNode_->GetPosition());
         
         float changeX = cameraNode_->GetPosition().x_ - lastX;
         float changeY = cameraNode_->GetPosition().y_ - lastY;
         
+        // Moves all the stars
         {
+            // Shifts the stars in proportion to how much the camera moved to maintain perspective
             float x1 = stars1_->GetPosition().x_ - changeX + (changeX / 1.2F);
             float y1 = stars1_->GetPosition().y_ - changeY + (changeY / 1.2F);
             stars1_->SetPosition2D(Vector2(x1, y1));
             
-            if (stars1_->GetPosition().x_ * PPM > netStarSize) {
-                stars1_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
-            } else if (stars1_->GetPosition().x_ * PPM < -netStarSize) {
-                stars1_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            // Move the tiled stars over 
+            while(stars1_->GetPosition().x_ > netStarSize) {
+                stars1_->SetPosition2D(Vector2(x1 - netStarSize, y1));
+            }
+            while(stars1_->GetPosition().x_ < -netStarSize) {
+                stars1_->SetPosition2D(Vector2(x1 + netStarSize, y1));
             }
             
             float x2 = stars1_->GetPosition().x_;
             
-            if (stars1_->GetPosition().y_ * PPM > netStarSize) {
-                stars1_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
-            } else if (stars1_->GetPosition().y_ * PPM < -netStarSize) {
-                stars1_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            while(stars1_->GetPosition().y_ > netStarSize) {
+                stars1_->SetPosition2D(Vector2(x2, y1 - netStarSize));
+            }
+            while(stars1_->GetPosition().y_ < -netStarSize) {
+                stars1_->SetPosition2D(Vector2(x2, y1 + netStarSize));
             }
         }
         {
@@ -576,18 +583,20 @@ public:
             float y1 = stars2_->GetPosition().y_ - changeY + (changeY / 1.3F);
             stars2_->SetPosition2D(Vector2(x1, y1));
             
-            if (stars2_->GetPosition().x_ * PPM > netStarSize) {
-                stars2_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
-            } else if (stars2_->GetPosition().x_ * PPM < -netStarSize) {
-                stars2_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            while(stars2_->GetPosition().x_ > netStarSize) {
+                stars2_->SetPosition2D(Vector2(x1 - netStarSize, y1));
+            }
+            while(stars2_->GetPosition().x_ < -netStarSize) {
+                stars2_->SetPosition2D(Vector2(x1 + netStarSize, y1));
             }
 
             float x2 = stars2_->GetPosition().x_;
 
-            if (stars2_->GetPosition().y_ * PPM > netStarSize) {
-                stars2_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
-            } else if (stars2_->GetPosition().y_ * PPM < -netStarSize) {
-                stars2_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            while(stars2_->GetPosition().y_ > netStarSize) {
+                stars2_->SetPosition2D(Vector2(x2, y1 - netStarSize));
+            }
+            while(stars2_->GetPosition().y_ < -netStarSize) {
+                stars2_->SetPosition2D(Vector2(x2, y1 + netStarSize));
             }
         }
         {
@@ -595,18 +604,20 @@ public:
             float y1 = stars3_->GetPosition().y_ - changeY + (changeY / 1.4F);
             stars3_->SetPosition2D(Vector2(x1, y1));
             
-            if (stars3_->GetPosition().x_ * PPM > netStarSize) {
-                stars3_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
-            } else if (stars3_->GetPosition().x_ * PPM < -netStarSize) {
-                stars3_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            while(stars3_->GetPosition().x_ > netStarSize) {
+                stars3_->SetPosition2D(Vector2(x1 - netStarSize, y1));
+            }
+            while(stars3_->GetPosition().x_ < -netStarSize) {
+                stars3_->SetPosition2D(Vector2(x1 + netStarSize, y1));
             }
             
             float x2 = stars3_->GetPosition().x_;
             
-            if (stars3_->GetPosition().y_ * PPM > netStarSize) {
-                stars3_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
-            } else if (stars3_->GetPosition().y_ * PPM < -netStarSize) {
-                stars3_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            while(stars3_->GetPosition().y_ > netStarSize) {
+                stars3_->SetPosition2D(Vector2(x2, y1 - netStarSize));
+            }
+            while(stars3_->GetPosition().y_ < -netStarSize) {
+                stars3_->SetPosition2D(Vector2(x2, y1 + netStarSize));
             }
         }
         
