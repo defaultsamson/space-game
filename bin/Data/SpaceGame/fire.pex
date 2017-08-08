@@ -3,26 +3,26 @@
 	<texture name="firepixel.png" />
 	<sourcePosition x="0" y="0" />
 	<sourcePositionVariance x="0" y="0" />
-	<speed value="300" />
-	<speedVariance value="100" />
-	<particleLifeSpan value="1" />
-	<particleLifespanVariance value="0" />
+	<speed value="200" />
+	<speedVariance value="80" />
+	<particleLifeSpan value="0.9" />
+	<particleLifespanVariance value="0.3" />
 	<angle value="270" />
-	<angleVariance value="20" />
+	<angleVariance value="60" />
 	<gravity x="0" y="0" />
 	<radialAcceleration value="0" />
 	<tangentialAcceleration value="0" />
 	<radialAccelVariance value="0" />
 	<tangentialAccelVariance value="0" />
-	<startColor red="0.475" green="0.13" blue="0" alpha="0.8" />
-	<startColorVariance red="-0.105" green="0.13" blue="0" alpha="-0.015" />
+	<startColor red="0.5" green="0.15" blue="0" alpha="1.0" />
+	<startColorVariance red="-0.105" green="0.1" blue="0" alpha="-0.015" />
 	<finishColor red="0.5" green="0" blue="0" alpha="0" />
 	<finishColorVariance red="0" green="0" blue="0" alpha="0" />
-	<maxParticles value="300" />
-	<startParticleSize value="16" />
-	<startParticleSizeVariance value="8" />
-	<finishParticleSize value="0" />
-	<FinishParticleSizeVariance value="16" />
+	<maxParticles value="400" />
+	<startParticleSize value="15" />
+	<startParticleSizeVariance value="6" />
+	<finishParticleSize value="8" />
+	<FinishParticleSizeVariance value="5" />
 	<duration value="100" />
 	<emitterType value="0" />
 	<maxRadius value="100" />
