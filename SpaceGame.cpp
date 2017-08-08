@@ -561,7 +561,7 @@ public:
             float y1 = stars1_->GetPosition().y_ - changeY + (changeY / 1.2F);
             stars1_->SetPosition2D(Vector2(x1, y1));
             
-            // Move the tiled stars over 
+            // Shift the tiled stars in the x plane if the player is making them go off-screen by moving
             while(stars1_->GetPosition().x_ > netStarSize) {
                 stars1_->SetPosition2D(Vector2(x1 - netStarSize, y1));
             }
@@ -569,8 +569,10 @@ public:
                 stars1_->SetPosition2D(Vector2(x1 + netStarSize, y1));
             }
             
+            // Get the newly set x position
             float x2 = stars1_->GetPosition().x_;
             
+            // Shift the tiled stars in the y plane if the player is making them go off-screen by moving
             while(stars1_->GetPosition().y_ > netStarSize) {
                 stars1_->SetPosition2D(Vector2(x2, y1 - netStarSize));
             }
