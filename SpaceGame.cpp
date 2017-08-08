@@ -115,8 +115,8 @@ public:
         ResourceCache* cache=GetSubsystem<ResourceCache>();
         
         // Get sprite
-        Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
         SpriteSheet2D* starsSheet = cache->GetResource<SpriteSheet2D>("SpaceGame/sheets/ambient.xml");
+        SpriteSheet2D* entitySheet = cache->GetResource<SpriteSheet2D>("SpaceGame/sheets/entity.xml");
         ParticleEffect2D* fireEffect = cache->GetResource<ParticleEffect2D>("SpaceGame/fire.pex");
         
         /*
@@ -274,8 +274,8 @@ public:
             shipSpriteNode_->SetScale(4);
             
             StaticSprite2D* staticSprite = shipSpriteNode_->CreateComponent<StaticSprite2D>();
-            staticSprite->SetLayer(1);
-            staticSprite->SetSprite(shipSprite);
+            staticSprite->SetLayer(2);
+            staticSprite->SetSprite(entitySheet->GetSprite("ship"));
             staticSprite->SetBlendMode(BLEND_ALPHA);
 
             // Create rigid body
@@ -302,6 +302,8 @@ public:
             fireNode->SetPosition2D(Vector2(0, -24 * MPP));
             fireEmitter = fireNode->CreateComponent<ParticleEmitter2D>();
             fireEmitter->SetEffect(fireEffect);
+            fireEmitter->SetSprite(entitySheet->GetSprite("firepixel"));
+            fireEmitter->SetLayer(1);
         }
         
         // Set random color
@@ -537,7 +539,7 @@ public:
         }
 
         fireEmitter->SetEmitting(up || down || left || right);
-
+        
         if (input->GetKeyDown(KEY_PAGEUP))
         {
             Camera* camera = cameraNode_->GetComponent<Camera>();
@@ -566,6 +568,15 @@ public:
         
         float changeX = cameraNode_->GetPosition().x_ - lastX;
         float changeY = cameraNode_->GetPosition().y_ - lastY;
+        
+        /*
+        float shipSpeed = sqrt((shipBody_->GetLinearVelocity().x_ * shipBody_->GetLinearVelocity().x_) + (shipBody_->GetLinearVelocity().y_ * shipBody_->GetLinearVelocity().y_));
+        fireEmitter->GetEffect()->SetMaxParticles(8*shipSpeed + 100);
+        
+        std::string ss = std::to_string(8*shipSpeed + 100);
+        String s(ss.c_str(), ss.size());
+        URHO3D_LOGINFO(s); 
+        */
         
         // Moves all the stars
         {
@@ -635,7 +646,6 @@ public:
                 stars3_->SetPosition2D(Vector2(x2, y1 + netStarSize));
             }
         }
-        
     }
     
     /**

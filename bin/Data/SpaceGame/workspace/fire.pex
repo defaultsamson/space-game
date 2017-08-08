@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <particleEmitterConfig>
-	<texture name="sheets/entity.png" />
+	<texture name="firepixel.png" />
 	<sourcePosition x="0" y="0" />
 	<sourcePositionVariance x="0" y="0" />
 	<speed value="200" />

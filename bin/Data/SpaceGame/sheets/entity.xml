@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created with TexPack https://github.com/urraka/texpack -->
 <TextureAtlas imagePath="entity.png" width="67" height="34">
+  <filter mode="nearest" />
   <SubTexture name="ship" x="1" y="1" width="31" height="32"></SubTexture>
   <SubTexture name="firepixel" x="33" y="1" width="33" height="32"></SubTexture>
 </TextureAtlas>
