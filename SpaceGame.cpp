@@ -55,6 +55,9 @@ public:
     SharedPtr<Node> shipNode_;
     PhysicsWorld2D* world;
     
+    const int starsSize = 512;
+    const int starsScale = 2;
+    const int netStarSize = starsSize * starsScale;
     SharedPtr<Node> stars_;
     SharedPtr<Node> stars1_;
     SharedPtr<Node> stars2_;
@@ -213,30 +216,47 @@ public:
         
         stars_ = scene_->CreateChild("Stars");
         {
-            stars3_ = stars_->CreateChild("Stars3");
-            stars3_->SetScale(2);
-            StaticSprite2D* staticSprite = stars3_->CreateComponent<StaticSprite2D>();
-            staticSprite->SetLayer(0);
-            staticSprite->SetSprite(starsSheet->GetSprite("stars3"));
-            staticSprite->SetBlendMode(BLEND_ALPHA);
+            stars1_ = stars_->CreateChild("Stars1");
+            stars1_->SetScale(starsScale);
+            for(int i = -1; i <= 1; i++) {
+                for(int j = -1; j <= 1; j++) {
+                    Node* node = stars1_->CreateChild("");
+                    node->SetPosition2D(starsSize * i * MPP, starsSize * j * MPP);
+                    StaticSprite2D* staticSprite = node->CreateComponent<StaticSprite2D>();
+                    staticSprite->SetLayer(0);
+                    staticSprite->SetSprite(starsSheet->GetSprite("stars1"));
+                    staticSprite->SetBlendMode(BLEND_ALPHA);
+                }
+            }
         }
         {
             stars2_ = stars_->CreateChild("Stars2");
-            stars2_->SetScale(2);
-            StaticSprite2D* staticSprite = stars2_->CreateComponent<StaticSprite2D>();
-            staticSprite->SetLayer(0);
-            staticSprite->SetSprite(starsSheet->GetSprite("stars2"));
-            staticSprite->SetBlendMode(BLEND_ALPHA);
+            stars2_->SetScale(starsScale);
+            for(int i = -1; i <= 1; i++) {
+                for(int j = -1; j <= 1; j++) {
+                    Node* node = stars2_->CreateChild("");
+                    node->SetPosition2D(starsSize * i * MPP, starsSize * j * MPP);
+                    StaticSprite2D* staticSprite = node->CreateComponent<StaticSprite2D>();
+                    staticSprite->SetLayer(0);
+                    staticSprite->SetSprite(starsSheet->GetSprite("stars2"));
+                    staticSprite->SetBlendMode(BLEND_ALPHA);
+                }
+            }
         }
         {
-            stars1_ = stars_->CreateChild("Stars1");
-            stars1_->SetScale(2);
-            StaticSprite2D* staticSprite = stars1_->CreateComponent<StaticSprite2D>();
-            staticSprite->SetLayer(0);
-            staticSprite->SetSprite(starsSheet->GetSprite("stars1"));
-            staticSprite->SetBlendMode(BLEND_ALPHA);
+            stars3_ = stars_->CreateChild("Stars3");
+            stars3_->SetScale(starsScale);
+            for(int i = -1; i <= 1; i++) {
+                for(int j = -1; j <= 1; j++) {
+                    Node* node = stars3_->CreateChild("");
+                    node->SetPosition2D(starsSize * i * MPP, starsSize * j * MPP);
+                    StaticSprite2D* staticSprite = node->CreateComponent<StaticSprite2D>();
+                    staticSprite->SetLayer(0);
+                    staticSprite->SetSprite(starsSheet->GetSprite("stars3"));
+                    staticSprite->SetBlendMode(BLEND_ALPHA);
+                }
+            }
         }
-        
         
         {
             shipNode_ = scene_->CreateChild("Ship");
@@ -420,6 +440,7 @@ public:
 
         if(time_ >=1)
         {
+            /*
             std::string str;
             str.append("Keys: tab = toggle mouse, AWSD = move camera, Shift = fast mode, Esc = quit.\n");
             {
@@ -445,7 +466,7 @@ public:
             str.append(" fps");
             String s(str.c_str(),str.size());
             //text_->SetText(s);
-            URHO3D_LOGINFO(s);     // this is how to put stuff into the log
+            URHO3D_LOGINFO(s);     // this is how to put stuff into the log*/
             framecount_=0;
             time_=0;
         }
@@ -502,21 +523,6 @@ public:
             shipBody_->ApplyForceToCenter(Vector2(-SHIP_FORCE, 0), true);
         }
 
-        /*
-        std::string str;
-        str.append("ship velocity: ");
-              
-        {
-            std::ostringstream ss;
-            ss << shipBody_->GetLinearVelocity().x_;
-            std::string s(ss.str());
-            str.append(s.substr(0,6));
-        }
-            
-        String s(str.c_str(),str.size());
-        URHO3D_LOGINFO(s);
-        */
-
         if (input->GetKeyDown(KEY_PAGEUP))
         {
             Camera* camera = cameraNode_->GetComponent<Camera>();
@@ -546,17 +552,64 @@ public:
         float changeX = cameraNode_->GetPosition().x_ - lastX;
         float changeY = cameraNode_->GetPosition().y_ - lastY;
         
-        float x3 = stars3_->GetPosition().x_ - changeX + (changeX / 1.4F);
-        float y3 = stars3_->GetPosition().y_ - changeY + (changeY / 1.4F);
-        stars3_->SetPosition2D(Vector2(x3, y3));
+        {
+            float x1 = stars1_->GetPosition().x_ - changeX + (changeX / 1.2F);
+            float y1 = stars1_->GetPosition().y_ - changeY + (changeY / 1.2F);
+            stars1_->SetPosition2D(Vector2(x1, y1));
+            
+            if (stars1_->GetPosition().x_ * PPM > netStarSize) {
+                stars1_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
+            } else if (stars1_->GetPosition().x_ * PPM < -netStarSize) {
+                stars1_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            }
+            
+            float x2 = stars1_->GetPosition().x_;
+            
+            if (stars1_->GetPosition().y_ * PPM > netStarSize) {
+                stars1_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
+            } else if (stars1_->GetPosition().y_ * PPM < -netStarSize) {
+                stars1_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            }
+        }
+        {
+            float x1 = stars2_->GetPosition().x_ - changeX + (changeX / 1.3F);
+            float y1 = stars2_->GetPosition().y_ - changeY + (changeY / 1.3F);
+            stars2_->SetPosition2D(Vector2(x1, y1));
+            
+            if (stars2_->GetPosition().x_ * PPM > netStarSize) {
+                stars2_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
+            } else if (stars2_->GetPosition().x_ * PPM < -netStarSize) {
+                stars2_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            }
+
+            float x2 = stars2_->GetPosition().x_;
+
+            if (stars2_->GetPosition().y_ * PPM > netStarSize) {
+                stars2_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
+            } else if (stars2_->GetPosition().y_ * PPM < -netStarSize) {
+                stars2_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            }
+        }
+        {
+            float x1 = stars3_->GetPosition().x_ - changeX + (changeX / 1.4F);
+            float y1 = stars3_->GetPosition().y_ - changeY + (changeY / 1.4F);
+            stars3_->SetPosition2D(Vector2(x1, y1));
+            
+            if (stars3_->GetPosition().x_ * PPM > netStarSize) {
+                stars3_->SetPosition2D(Vector2(x1 - (netStarSize * MPP), y1));
+            } else if (stars3_->GetPosition().x_ * PPM < -netStarSize) {
+                stars3_->SetPosition2D(Vector2(x1 + (netStarSize * MPP), y1));
+            }
+            
+            float x2 = stars3_->GetPosition().x_;
+            
+            if (stars3_->GetPosition().y_ * PPM > netStarSize) {
+                stars3_->SetPosition2D(Vector2(x2, y1 - (netStarSize * MPP)));
+            } else if (stars3_->GetPosition().y_ * PPM < -netStarSize) {
+                stars3_->SetPosition2D(Vector2(x2, y1 + (netStarSize * MPP)));
+            }
+        }
         
-        float x2 = stars2_->GetPosition().x_ - changeX + (changeX / 1.3F);
-        float y2 = stars2_->GetPosition().y_ - changeY + (changeY / 1.3F);
-        stars2_->SetPosition2D(Vector2(x2, y2));
-        
-        float x1 = stars1_->GetPosition().x_ - changeX + (changeX / 1.2F);
-        float y1 = stars1_->GetPosition().y_ - changeY + (changeY / 1.2F);
-        stars1_->SetPosition2D(Vector2(x1, y1));
     }
     
     /**
