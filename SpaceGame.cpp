@@ -21,6 +21,7 @@
 #include <Urho3D/Urho2D/RigidBody2D.h>
 #include <Urho3D/Urho2D/StaticSprite2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/SpriteSheet2D.h>
 
 
 using namespace Urho3D;
@@ -108,9 +109,7 @@ public:
         
         // Get sprite
         Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
-        Sprite2D* stars1Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars1.png");
-        Sprite2D* stars2Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars2.png");
-        Sprite2D* stars3Sprite = cache->GetResource<Sprite2D>("SpaceGame/stars3.png");
+        SpriteSheet2D* starsSheet = cache->GetResource<SpriteSheet2D>("SpaceGame/sheets/ambient.xml");
         
         /*
         // Let's use the default style that comes with Urho3D.
@@ -215,23 +214,26 @@ public:
         stars_ = scene_->CreateChild("Stars");
         {
             stars3_ = stars_->CreateChild("Stars3");
+            stars3_->SetScale(2);
             StaticSprite2D* staticSprite = stars3_->CreateComponent<StaticSprite2D>();
             staticSprite->SetLayer(0);
-            staticSprite->SetSprite(stars3Sprite);
+            staticSprite->SetSprite(starsSheet->GetSprite("stars3"));
             staticSprite->SetBlendMode(BLEND_ALPHA);
         }
         {
             stars2_ = stars_->CreateChild("Stars2");
+            stars2_->SetScale(2);
             StaticSprite2D* staticSprite = stars2_->CreateComponent<StaticSprite2D>();
             staticSprite->SetLayer(0);
-            staticSprite->SetSprite(stars2Sprite);
+            staticSprite->SetSprite(starsSheet->GetSprite("stars2"));
             staticSprite->SetBlendMode(BLEND_ALPHA);
         }
         {
             stars1_ = stars_->CreateChild("Stars1");
+            stars1_->SetScale(2);
             StaticSprite2D* staticSprite = stars1_->CreateComponent<StaticSprite2D>();
             staticSprite->SetLayer(0);
-            staticSprite->SetSprite(stars1Sprite);
+            staticSprite->SetSprite(starsSheet->GetSprite("stars1"));
             staticSprite->SetBlendMode(BLEND_ALPHA);
         }
         

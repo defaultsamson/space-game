@@ -154,6 +154,7 @@ CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/in
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho2D/PhysicsWorld2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho2D/RigidBody2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho2D/Sprite2D.h
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho2D/SpriteSheet2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho2D/StaticSprite2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.o: /home/samson/Urho3D-master/Build/include/Urho3D/Urho3D.h
 
