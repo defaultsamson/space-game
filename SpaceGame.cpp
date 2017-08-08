@@ -22,6 +22,8 @@
 #include <Urho3D/Urho2D/StaticSprite2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
 #include <Urho3D/Urho2D/SpriteSheet2D.h>
+#include <Urho3D/Urho2D/ParticleEffect2D.h>
+#include <Urho3D/Urho2D/ParticleEmitter2D.h>
 
 
 using namespace Urho3D;
@@ -51,9 +53,11 @@ public:
     //SharedPtr<Node> boxNode_;
     SharedPtr<Node> cameraNode_;
     
-    RigidBody2D* shipBody_;
-    SharedPtr<Node> shipNode_;
     PhysicsWorld2D* world;
+    
+    SharedPtr<Node> shipNode_;
+    RigidBody2D* shipBody_;
+    ParticleEmitter2D* fireEmitter;
     
     const int starsSize = 512;
     const int starsScale = 2;
@@ -113,6 +117,7 @@ public:
         // Get sprite
         Sprite2D* shipSprite = cache->GetResource<Sprite2D>("SpaceGame/ship.png");
         SpriteSheet2D* starsSheet = cache->GetResource<SpriteSheet2D>("SpaceGame/sheets/ambient.xml");
+        ParticleEffect2D* fireEffect = cache->GetResource<ParticleEffect2D>("SpaceGame/fire.pex");
         
         /*
         // Let's use the default style that comes with Urho3D.
@@ -291,6 +296,12 @@ public:
             box->SetFriction(1.0f);
             // Set restitution
             box->SetRestitution(0.1f);
+            
+            // Fire node
+            Node* fireNode = shipNode_->CreateChild("FireEmitter");
+            fireNode->SetPosition2D(Vector2(0, -24 * MPP));
+            fireEmitter = fireNode->CreateComponent<ParticleEmitter2D>();
+            fireEmitter->SetEffect(fireEffect);
         }
         
         // Set random color
@@ -524,6 +535,8 @@ public:
             shipNode_->SetRotation2D(90);
             shipBody_->ApplyForceToCenter(Vector2(-SHIP_FORCE, 0), true);
         }
+
+        fireEmitter->SetEmitting(up || down || left || right);
 
         if (input->GetKeyDown(KEY_PAGEUP))
         {
