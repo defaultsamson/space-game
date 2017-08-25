@@ -172,8 +172,8 @@ SpaceGameProject_BINARY_DIR:STATIC=/home/samson/Documents/GitHub/space-game/Buil
 //Value Computed by CMake
 SpaceGameProject_SOURCE_DIR:STATIC=/home/samson/Documents/GitHub/space-game
 
-//Enable 64-bit build, the default is set based on the native ABI
-// of the chosen compiler toolchain
+//Enable 64-bit build, the value is auto-discovered based on the
+// found Urho3D library
 URHO3D_64BIT:BOOL=1
 
 //Enable AngelScript scripting support
@@ -181,9 +181,6 @@ URHO3D_ANGELSCRIPT:BOOL=ON
 
 //Urho3D include directory
 URHO3D_BASE_INCLUDE_DIR:PATH=/home/samson/Urho3D-master/Build/include/Urho3D
-
-//Enable C++11 standard
-URHO3D_C++11:BOOL=OFF
 
 //Specify the minimum CPU type on which the target binaries are
 // to be deployed (non-ARM platform only), see GCC/Clang's -march
@@ -231,6 +228,9 @@ URHO3D_THREADING:BOOL=ON
 
 //Enable 2D graphics and physics support
 URHO3D_URHO2D:BOOL=ON
+
+//Enable WebP support
+URHO3D_WEBP:BOOL=ON
 
 
 ########################
@@ -407,9 +407,9 @@ POWERPC:INTERNAL=0
 //Is RTTI enabled
 RTTI:INTERNAL=1
 //Initial value for CC
-SAVED_CC:INTERNAL=
+SAVED_CC:INTERNAL=/usr/bin/cc
 //Initial value for CXX
-SAVED_CXX:INTERNAL=
+SAVED_CXX:INTERNAL=/usr/bin/c++
 //Compiler toolchain has predefined macros matching __SIZEOF_POINTER__
 SIZEOF_POINTER:INTERNAL=8
 //Path to system root of the cross-compiling target
@@ -427,6 +427,9 @@ URHO3D_FOUND_LIB_TYPE:INTERNAL=STATIC
 URHO3D_LIBRARIES-ADVANCED:INTERNAL=1
 //STRINGS property for variable: URHO3D_LIB_TYPE
 URHO3D_LIB_TYPE-STRINGS:INTERNAL=STATIC;SHARED
+//GNU extension of C++11 standard that is verified to be supported
+// by the chosen compiler
+VERIFIED_SUPPORTED_STANDARD:INTERNAL=gnu++11
 //Compiler toolchain has predefined macros matching __EMSCRIPTEN__
 WEB:INTERNAL=0
 //Compiler toolchain has predefined macros matching __(i.86|x86_64)__

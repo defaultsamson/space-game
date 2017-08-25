@@ -151,6 +151,8 @@ CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildM
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/CollisionBox2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/CollisionShape2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/Drawable2D.h
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/ParticleEffect2D.h
+CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/ParticleEmitter2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/PhysicsWorld2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/RigidBody2D.h
 CMakeFiles/SpaceGameExe.dir/SpaceGame.cpp.obj: /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/Sprite2D.h

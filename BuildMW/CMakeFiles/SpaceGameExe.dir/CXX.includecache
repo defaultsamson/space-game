@@ -53,6 +53,10 @@ Urho3D/Urho2D/Sprite2D.h
 -
 Urho3D/Urho2D/SpriteSheet2D.h
 -
+Urho3D/Urho2D/ParticleEffect2D.h
+-
+Urho3D/Urho2D/ParticleEmitter2D.h
+-
 
 /home/samson/Urho3D-master/BuildMW/include/Urho3D/Container/Allocator.h
 Urho3D.h
@@ -1253,6 +1257,16 @@ Box2D/Box2D.h
 /home/samson/Urho3D-master/BuildMW/include/Urho3D/Graphics/Drawable.h
 ../Graphics/GraphicsDefs.h
 /home/samson/Urho3D-master/BuildMW/include/Urho3D/Graphics/GraphicsDefs.h
+
+/home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/ParticleEffect2D.h
+../Graphics/GraphicsDefs.h
+/home/samson/Urho3D-master/BuildMW/include/Urho3D/Graphics/GraphicsDefs.h
+../Resource/Resource.h
+/home/samson/Urho3D-master/BuildMW/include/Urho3D/Resource/Resource.h
+
+/home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/ParticleEmitter2D.h
+../Urho2D/Drawable2D.h
+/home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/Drawable2D.h
 
 /home/samson/Urho3D-master/BuildMW/include/Urho3D/Urho2D/PhysicsWorld2D.h
 ../Scene/Component.h

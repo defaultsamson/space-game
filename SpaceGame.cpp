@@ -304,6 +304,7 @@ public:
             fireEmitter->SetEffect(fireEffect);
             fireEmitter->SetSprite(entitySheet->GetSprite("firepixel"));
             fireEmitter->SetLayer(1);
+            //fireEmitter->SetRelative(false);
         }
         
         // Set random color

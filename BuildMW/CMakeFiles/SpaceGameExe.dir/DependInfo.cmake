@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "URHO3D_STATIC_DEFINE"
   "URHO3D_THREADING"
   "URHO3D_URHO2D"
+  "URHO3D_WEBP"
   )
 
 # The include file search paths:
